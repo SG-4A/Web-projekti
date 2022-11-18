@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background: url(/Kuvat/night-3078326_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img{
+    width: 5.5rem;
+    height: 5.2rem;
+    border-radius: 50%;
+}
+
+.img{
+    position: fixed;
+}
+
+#title{
+    text-align: center;
+    padding: 0.8rem 0;
+    font-size: 3rem;
+    color: #418a91;
+    background: #54b0b8a1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.questions{
+    margin: 3rem auto;
+    width: 90vw;
+    padding: 2rem;
+    background: #409299;
+    cursor: default;
+    border-radius: 1rem;
+}
+
+#question{
+    margin-bottom: 1rem;
+}
+.option{
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: solid 0.1rem #409299;
+    width: 15rem;
+    background: #55dae69c;
+    border-radius: 1rem;
+}
+
+.option:hover{
+    color: #fff;
+}
+
+ol{
+    position: relative;
+    padding: 0 1.5rem;
+    color: #104044;
+}
+
+span{
+    display: block;
+    padding: 0.1rem 0.7rem;
+    border-radius: 1rem;
+}
+
+#answer{
+    margin-top: 2.5rem;
+}
+
+#stat{
+    margin-top: 1.5;
+    color: #104044;
+}
+
+.buttons{
+    text-align: center;
+}
+
+button{
+    padding: 0.2rem 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 1.5rem;
+    color: #54afb8;
+    background: #216369;
+}
+
+button:active{
+    background: #ecce24;
+}
+
+#scoreboard,#answerBank{
+    width: 20rem;
+    background: #ffffcf;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 5rem;
+    display: none;
+    border-radius: 5em;
+}
+
+#score-title{
+    margin: 1rem 0;
+}
+
+#score-btn,#check-answer{
+    margin-top: 1rem;
+}
+
+#score{
+    font-size: 2.5rem;
+}
+
+#anwerBank li{
+    text-align: left;
+    margin-bottom: 0.2rem;
+    font-size: large;
+}
+
+#answers{
+    margin-top: 1rem;
+}
+
+h1{
+    color:#104044;
+}
+
+h2{
+    color:#104044;
+}
+
+#scoreboard img{
+    width: 100%;
+    height: 80%;
+}
