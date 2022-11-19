@@ -1,29 +1,29 @@
 //Vastaus pankki
 let questionBank = [
     {
-        question : "Historia", 
-        option : ["12","13","18","14"],
-        answer : "14"
+        question : "Missä Olympialaiset saivat alkunsa?", 
+        option : ["Kreikka","Italia","Suomi","Amerikka"],
+        answer : "Kreikka"
     },
     {
-        question : "Paljonko on 16+2", 
-        option : ["17","14","18","10"],
-        answer : "18"
+        question : "Kuka keksi puhelimen?", 
+        option : ["Steve Jobs","Elon Musk","Alexander Graham Bel","Bill Gates"],
+        answer : "Alexander Graham Bel"
     },
     {
-        question : "Paljonko on 3+7", 
-        option : ["10","8","9","7"],
-        answer : "10"
+        question : "Mikä maa käytti ensimmäisenä paperi rahaa?", 
+        option : ["Italia","Amerikka","Kiina","Suomi"],
+        answer : "Kiina"
     },
     {
-        question : "Paljonko on 11+4", 
-        option : ["18","10","14","15"],
-        answer : "15"
+        question : "Mikä maa lahjoitti Vapaudenpatsaan Amerikkaan?", 
+        option : ["Ranska","Venäjä","Ruotsi","Suomi"],
+        answer : "Ranska"
     },
     {
-        question : "Paljonko on 10+7", 
-        option : ["12","16","10","17"],
-        answer : "17"
+        question : "Minä vuonna Suomi sai itsenäisyyden", 
+        option : ["1917","1876","2000","1984"],
+        answer : "1917"
     },
 ]
 
