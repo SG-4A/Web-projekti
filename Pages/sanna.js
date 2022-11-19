@@ -16,14 +16,14 @@ var questionBank= [
         answer : '17'
     },
     {
-        question : 'Hitler party which came into power in 1933 is known as',
-        option : ['Labour Party','Nazi Party','Ku-Klux-Klan','Democratic Party'],
-        answer : 'Nazi Party'
+        question : 'Paljonko on 5+7?',
+        option : ['11','12','13','14'],
+        answer : '12'
     },
     {
-        question : 'First human heart transplant operation conducted by Dr. Christiaan Barnard on Louis Washkansky, was conducted in',
-        option : ['1967','1968','1958','1922'],
-        answer : '1967'
+        question : 'Paljonko on 17-6?',
+        option : ['11','13','15','16'],
+        answer : '11'
     }
 ]
 
