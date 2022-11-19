@@ -1,19 +1,19 @@
 //Question bank
 var questionBank= [
     {
-        question : 'Eritrea, which became the 182nd member of the UN in 1993, is in the continent of',
-        option : ['Asia','Africa','Europe','Australia'],
-        answer : 'Africa'
+        question : 'Paljonko on 10+5?',
+        option : ['11','15','10','16'],
+        answer : '15'
     },
     {
-        question : 'Garampani sanctuary is located at',
-        option : ['Junagarh, Gujarat','Diphu, Assam','Kohima, Nagaland','Gangtok, Sikkim'],
-        answer : 'Diphu, Assam'
+        question : 'Paljonko on 13-7?',
+        option : ['5','6','7','8'],
+        answer : '6'
     },
     {
-        question : 'For which of the following disciplines is Nobel Prize awarded?',
-        option : ['Physics and Chemistry','Physiology or Medicine','Literature, Peace and Economics','All of the above'],
-        answer : 'All of the above'
+        question : 'Paljonko on 9+8?',
+        option : ['14','15','16','17'],
+        answer : '17'
     },
     {
         question : 'Hitler party which came into power in 1933 is known as',
