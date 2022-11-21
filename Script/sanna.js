@@ -45,12 +45,12 @@ function displayQuestion(){
     for(let a=0;a<span.length;a++){
         span[a].style.background='none';
     }
-    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
+    question.innerHTML= ''+(i+1)+'. '+questionBank[i].question;
     option0.innerHTML= questionBank[i].option[0];
     option1.innerHTML= questionBank[i].option[1];
     option2.innerHTML= questionBank[i].option[2];
     option3.innerHTML= questionBank[i].option[3];
-    stat.innerHTML= "Kysymykset"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+    stat.innerHTML= "Kysymykset"+' '+(i+1)+' '+'/'+' '+questionBank.length;
 }
 
 //function to calculate scores
