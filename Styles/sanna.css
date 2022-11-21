@@ -32,8 +32,8 @@ img{
     width: 90vw;
     padding: 2rem;
     background-color:rgb(89, 89, 177);
-    cursor: default;
     border-radius: 1rem;
+    width: 30%;
 }
 #question{
     margin-bottom: 1rem;
