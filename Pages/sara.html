@@ -11,74 +11,46 @@
 </head>
 <body>
    <div><h1>Yhdyssanavisa</h1></div>
-   <button id="startbutton">Aloita visa</button>
-
-   <!--Kysymys1-->
-<div id="Question1" class="hidden">
-   <p>Kysymys 1</p>
-    <label for="">vastaus1</label>
-   <input type="radio" name="option1" id=""><br>
-   <label for="">vastaus2</label>
-   <input type="radio" name="option1" id=""><br>
-   <label for="">vastaus3</label>
-   <input type="radio" name="option1" id=""><br>
-   <label for="">vastaus4</label>
-   <input type="radio" name="option1" id="">
-   <button>seuraava</button>
-</div>
-   <!--Kysymys2-->
-   <div id="Question2" class="hidden">
-    <p>Kysymys 2</p>
-     <label for="">vastaus1</label>
-    <input type="radio" name="option2" id=""><br>
-    <label for="">vastaus2</label>
-    <input type="radio" name="option2" id=""><br>
-    <label for="">vastaus3</label>
-    <input type="radio" name="option2" id=""><br>
-    <label for="">vastaus4</label>
-    <input type="radio" name="option2" id="">
-    <button>seuraava</button>
- </div>
-  <!--Kysymys3-->
-  <div id="Question3" class="hidden">
-    <p>Kysymys 3</p>
-     <label for="">vastaus1</label>
-    <input type="radio" name="option3" id=""><br>
-    <label for="">vastaus2</label>
-    <input type="radio" name="option3" id=""><br>
-    <label for="">vastaus3</label>
-    <input type="radio" name="option3" id=""><br>
-    <label for="">vastaus4</label>
-    <input type="radio" name="option3" id="">
-    <button>seuraava</button>
- </div>
- <!--Kysymys4-->
- <div id="Question4" class="hidden">
-    <p>Kysymys 4</p>
-     <label for="">vastaus1</label>
-    <input type="radio" name="option4" id=""><br>
-    <label for="">vastaus2</label>
-    <input type="radio" name="option4" id=""><br>
-    <label for="">vastaus3</label>
-    <input type="radio" name="option4" id=""><br>
-    <label for="">vastaus4</label>
-    <input type="radio" name="option4" id="">
-    <button>seuraava</button>
- </div>
- <!--Kysymys5-->
- <div id="Question5" class="hidden">
-    <p>Kysymys 4</p>
-     <label for="">vastaus1</label>
-    <input type="radio" name="option5" id=""><br>
-    <label for="">vastaus2</label>
-    <input type="radio" name="option5" id=""><br>
-    <label for="">vastaus3</label>
-    <input type="radio" name="option5" id=""><br>
-    <label for="">vastaus4</label>
-    <input type="radio" name="option5" id="">
-    <button>seuraava</button>
- </div>
    
+<!---Divi joka sisältää koko visan alkaa tästä-->
+ <div id="container">
+   <!---Divi joka sisältää kysymykset alkaa tästä-->
+   <div id="questions">
+      <h3 id="question"></h3>
+      <ol>
+         <li class="opt"><span class="option0" onclick()="calculateScore(this)"></span></li>
+         <li class="opt"><span class="option1" onclick()="calculateScore(this)"></span></li>
+         <li class="opt"><span class="option2" onclick()="calculateScore(this)"></span></li>
+      </ol>
+      <h4 id="stats"></h4>
+
+</div>
+<!--Divi joka sisältää kysymykset päättyy tähän-->
+   <div id="buttons">
+   <button type="button" class="next">Seuraava</button>
+   </div>
+
+ </div>
+   <!--Divi joka sisältää koko visan loppuu tähän-->
+
+   <!---Tulostaulu alkaa tästä-->
+   <div id="scores">
+      <div id="scorepicture"></div>
+      <h3 id="scoreTitle">Sinun tuloksesi:</h3>
+      <p id="yourScoreHere"></p>
+      <button id="backbutton" onclick="backToQuiz()"></button>
+      <button id="CheckAnswers" onclick="checkAnswers()">Tarkista vastauksesi:</button>
+   </div>
+   <!--Tulostaulun divi päättyy-->
+
+   <!---Vastaustaulu alkaa tästä-->
+   <div id="answers">
+      <h3 id="a">Vastaukset:</h3>
+      <ol id="answerList">
+
+      </ol>
+      <button id="backbutton" onclick="backToQuiz()"></button>
+   </div>
 
     <!--footer bootstrap alkaa-->
 <footer class="text-center text-white fixed-bottom" style="background-color: #ecce24;">
