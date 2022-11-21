@@ -5,32 +5,32 @@
 let questions =[
 {
     q: "Kysymys 1",
-    o: ["Vaihtoehto1, vaihtoehto2, vaihtoehto3"],
-    a: ["vaihtoehto2,"]
+    o: ["Vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
+    a: "vaihtoehto2"
 },
 
 {
     q: "kysymys 2",
-    o: ["vaihtoehto1, vaihtoehto2, vaihtoehto3"],
-    a: ["vaihtoehto3"]
+    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
+    a: "vaihtoehto3"
 },
 
 {
     q: "kysymys3",
-    o: ["vaihtoehto1, vaihtoehto2, vaihtoehto3"],
-    a: ["vaihtoehto3"]
+    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
+    a: "vaihtoehto3"
 },
 
 {
     q: "kysymys4",
-    o: ["vaihtoehto1, vaihtoehto2, vaihtoehto3"],
-    a: ["vaihtoehto1"]
+    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
+    a: "vaihtoehto1"
 },
 
 {
     q: "kysymys5",
-    o:["vaihtoehto1, vaihtoehto2, vaihtoehto3"],
-    a:["vaihtoehto1"]
+    o:["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
+    a:"vaihtoehto1"
 },
 ]
 
@@ -51,14 +51,14 @@ let points=0;
 // functio joka näyttää kysymykset:
 
 function displayQuestion(){
-    for(let j=0; j<span.length; j++){
-        span[j].style.background='none';
+    for(let a=1; a<span.length; a++){
+        span[a].style.background="none";
     }
-        question.innerHTML= "Q." + (i+1)+" "+questions[i].question;
-        option0.innerHTML=questions[i].option[0];
-        option1.innerHTML=questions[i].option[1];
-        option2.innerHTML=questions[i].option[2];
-        stat.innerHTML="Kysymys" + " "+(i+1)+" "+ "/" + " " +questions.length;
+        question.innerHTML= "Kysymys"+ " " + (i+1)+" "+questions[i].q;
+        option0.innerHTML=questions[i].o[0];
+        option1.innerHTML=questions[i].o[1];
+        option2.innerHTML=questions[i].o[2];
+        document.getElementById("stats").innerHTML="Kysymys" + " "+(i+1)+" "+ "/" + " " +questions.length;
     
     }
 
@@ -67,10 +67,10 @@ function calculateScore(e){
     if(e.innerHTML===questions[i].a && points<questions.length)
 {
     points= points+1;
-    document.getElementById(e.id).style.background= "dark green";
+    document.getElementById(e.id).style.background= "green";
 }
 else{
-    document.getElementById(e.id).style.background= "dark red";
+    document.getElementById(e.id).style.background= "red";
 }
 setTimeout(nextQuestion,300);
 }
@@ -108,7 +108,7 @@ function checkAnswers(){
     for(let j=0;j<questions.length;j++)
     {
         let list= document.createElement("li");
-        list.innerHTML= questions[b].a;
+        list.innerHTML= questions[j].q+":"+" "+questions[j].a;
         answers.appendChild(list);
     }
 }

@@ -18,16 +18,22 @@
    <div id="questions">
       <h3 id="question"></h3>
       <ol>
-         <li class="opt"><span id="option0" onclick()="calculateScore(this)"></span></li>
-         <li class="opt"><span id="option1" onclick()="calculateScore(this)"></span></li>
-         <li class="opt"><span id="option2" onclick()="calculateScore(this)"></span></li>
+         <li class="opt">
+            <span id="option0" onclick="calculateScore(this)"></span>
+         </li>
+         <li class="opt">
+            <span id="option1" onclick="calculateScore(this)"></span>
+         </li>
+         <li class="opt">
+            <span id="option2" onclick="calculateScore(this)"></span>
+         </li>
       </ol>
       <h4 id="stats"></h4>
 
 </div>
 <!--Divi joka sisältää kysymykset päättyy tähän-->
    <div id="buttons">
-   <button type="button" class="next">Seuraava</button>
+   <button type="button" class="next">Seuraava kysymys</button>
    </div>
 
  </div>
@@ -38,8 +44,8 @@
       <div id="scorepicture"></div>
       <h3 id="scoreTitle">Sinun tuloksesi:</h3>
       <p id="yourScoreHere"></p>
-      <button id="backbutton" onclick="backToQuiz()"></button>
-      <button id="CheckAnswers" onclick="checkAnswers()">Tarkista vastauksesi:</button>
+      <button id="backbutton" onclick="backToQuiz()"> Takaisin kyselyyn</button>
+      <button id="CheckAnswers" onclick="checkAnswers()">Tarkista vastauksesi</button>
    </div>
    <!--Tulostaulun divi päättyy-->
 
@@ -49,7 +55,7 @@
       <ol id="answerList">
 
       </ol>
-      <button id="backbutton" onclick="backToQuiz()"></button>
+      <button id="backbutton" onclick="backToQuiz()">Takaisin kyselyyn</button>
    </div>
 
     <!--footer bootstrap alkaa-->
