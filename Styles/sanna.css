@@ -83,7 +83,7 @@ button:active{
 }
 #scoreboard,#answerBank{
     width: 20rem;
-    background: rgba(230,230,250,0.77);
+    background:rgb(137, 137, 230);
     padding: 2rem;
     text-align: center;
     margin: auto;
