@@ -1,11 +1,37 @@
-header{
+/*header{
     background-color: rgb(198, 223, 147);
     font-size: 40px;
     text-align: center;
     padding: 10px;
+}*/
+.container{
+display: grid;
+height:100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+}
 
-    
-    
+nav{
+    background-color: blue;
+}
 
+main{
+    background-color: brown;
+}
 
+footer{
+    background-color: aquamarine;
+}
 
+#sidebar{
+    background-color: bisque;
+}
+#content1{
+    background-color: azure;
+}
+#content2{
+    background-color: rgb(93, 93, 124);
+}
+#content3{
+    background-color: rgb(152, 103, 43);
+}

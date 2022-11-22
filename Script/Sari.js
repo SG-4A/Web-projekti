@@ -79,13 +79,82 @@ function nextQuestion(){
         scoreboard.style.display= "block"
     }
 }
+//yrittää olla kuvan vaihtaja
 
+function v13() {
+	
+	
+	const PRIZE1 = '<img src="../Images/Nimetön.png">';
+	const PRIZE2 = '<img src="../Images/purkki0.png">';
+	const PRIZE3 = '<img src="../Images/purkki1.png">';
+	const PRIZE4 = '<img src="../Images/purkki2.png">';
+    const PRIZE5 = '<img src="../Images/purkki3.png">';
+    const PRIZE6 = '<img src="../Images/purkki4.png">';
+
+
+    document.getElementById("scoreboard").innerHTML = "";
+
+    let score = Number(document.getElementById("score").value);
+
+
+    let result = document.getElementById("scoreboard");
+
+    if (result =0) {
+        document.getElementById("result").innerHTML = PRIZE1;} 
+    else if (result = 1) {
+        document.getElementById("result").innerHTML = PRIZE2;}
+    else if (result = 2) {
+        document.getElementById("result").innerHTML = PRIZE3;}
+    else if (result = 3){
+        document.getElementById("result").innerHTML = PRIZE4;}
+    else if (result = 4) {
+        document.getElementById("result").innerHTML = PRIZE5;}
+    else if (result = 5) {
+        document.getElementById("result").innerHTML = PRIZE6;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getImage(scoreboard)
+
+let image = "";
+if(imagePlace = 0){
+    image = "../images/Nimetön.png"
+}
+if(imagePlace = 1){
+    image = "../images/purkki0.png"
+}
+if(imagePlace = 2){
+    image = "../images/purkki1.png"
+}
+if(imagePlace = 3){
+    image = "../images/purkki2.png"
+}
+if(imagePlace = 4){
+    image = "../images/purkki3.png"
+}
+if(imagePlace = 5){
+    image = "../images/purkki4.png"
+}
 //back to quiz buttton event
 function backToQuiz(){
     location.reload();
 }
-
-function getImage(imagePlace)
+//yrittää olla kuvan vaihtaja
+function getImage(answerBank)
 
 let image = "";
 if(imagePlace = 0){
