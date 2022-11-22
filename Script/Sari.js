@@ -85,8 +85,27 @@ function backToQuiz(){
     location.reload();
 }
 
+function getImage(imagePlace)
 
-
+let image = "";
+if(imagePlace = 0){
+    image = "../images/Nimetön.png"
+}
+if(imagePlace = 1){
+    image = "../images/purkki0.png"
+}
+if(imagePlace = 2){
+    image = "../images/purkki1.png"
+}
+if(imagePlace = 3){
+    image = "../images/purkki2.png"
+}
+if(imagePlace = 4){
+    image = "../images/purkki3.png"
+}
+if(imagePlace = 5){
+    image = "../images/purkki4.png"
+}
 //function to check answers
 function checkAnswer(){
     let answerBank = document.getElementById("answerBank");
