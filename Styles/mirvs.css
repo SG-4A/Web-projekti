@@ -30,8 +30,8 @@ main{
 }
 
 .game-quiz-container{
-    width: 40rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     background-color: bisque;
     display: flex;
     flex-direction: column;
@@ -124,8 +124,8 @@ input[type=radio]:checked ~ .option {
     justify-content: center;
 }
 .next-button-container button{
-    width: 9rem;
-    height: 4rem;
+    width: 10rem;
+    height: 3rem;
     border-radius: 10px;
     background: rgb(242, 154, 46);
     color: rgb(25, 25, 25);
@@ -183,6 +183,26 @@ input[type=radio]:checked ~ .option {
 
 /*Tämä nappi pitäisi vielä siirtää oikealle paikalle!!*/
 .modal-content-container button{}
+
+footer{
+    text-align: center;
+    background-color: pink;
+    height: 10%;
+}
+
+header{
+    
+    text-align:center;
+    height:10%;
+    background: fixed;
+
+}
+
+.pagename{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
 
 
 
