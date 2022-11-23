@@ -1,5 +1,4 @@
-
-html{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +10,7 @@ html, body{
 
 
 body{
-    font-family: 'Montserrat', serif;
+    font-family:'Gill Sans', 'Gill Sans MT', 
 
 }
 
@@ -22,9 +21,11 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(images/autumn-7517221_640.jpg);
+    background-color: black;
+    background: url(../Mirva/imgs/autumn-7517221_640.jpg);
+    background-color : burlywood;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
 }
 
@@ -41,7 +42,7 @@ main{
 
 .game-details-container{
     width: 80%;
-    height: 3rem;
+    height: rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,23 +53,23 @@ main{
 }
 
 .game-question-container{
-    width: 90%;
-    height: 10rem;
+    width: 80%;
+    height: 8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid goldenrod;
-    border-radius: 10px;
+    border: 2px solid bisque;
+    border-radius: 25px;
 }
 
 .game-question-container h1{
-    font-size: 1.1rem;
+    font: size 1px;
     text-align: center;
     padding: 3px;
 }
 
 .game-options-container{
-    width: 90%;
+    width: 80%;
     height: 12rem;
     display: flex;
     flex-wrap: wrap;
@@ -78,9 +79,9 @@ main{
 
 .game-options-container span{
     width: 45%;
-    height: 4rem;
-    border: 3px solid goldenrod;
-    border-radius: 15px;
+    height: 5rem;
+    border: 2px solid black;
+    border-radius: 20px;
     overflow: hidden;
 }
 span label{
@@ -90,11 +91,21 @@ span label{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 10s;
     font-weight: 600;
-    color: rgb(22, 22, 22);
+    color: rgb(15, 14, 14);
+    font-family: 'Lucida Sans';
+    i
+    
 }
 
+
+span label:hover{
+    -ms-transform: scale(1.17);
+    -webkit-transform: scale(2.12);
+    transform: scale(1.12);
+    color: rgb(5, 72, 94);
+}
 
 input[type="radio"] {
     position: relative;
@@ -103,28 +114,28 @@ input[type="radio"] {
 
 
 input[type=radio]:checked ~ .option {
-    background:goldenrod;
+    background: rgb(243, 226, 36);
 }
 
 .next-button-container{
     width: 50%;
-    height: 20%;
+    height: 3rem;
     display: flex;
     justify-content: center;
 }
 .next-button-container button{
-    width: 9rem;
-    height: 4rem;
-    border-radius: 100px;
-    background-color:gold;
-    color: rgb(5, 8, 0);
-    font-weight: 600;
-    border: 2px solid gold;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: rgb(242, 154, 46);
+    color: rgb(25, 25, 25);
+    font-weight: 800;
+    border: 2px solid gray;
     cursor: pointer;
     outline: none;
 }
 .next-button-container button:hover{
-    background-color: goldenrod;
+    background-color: rgb(243, 226, 36 );
 }
 
 .modal-container{
@@ -135,32 +146,105 @@ input[type=radio]:checked ~ .option {
     top: 0;
     width: 100%; 
     height: 100%; 
-    overflow: auto;  
-    background-color: goldenrod; 
+    overflow: auto; 
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    -webkit-animation: fadeIn 1.1s ease-in-out;
-    animation: fadeIn 1.1s ease-in-out;
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
 }
 
 .modal-content-container{
-    height: 30rem;
-    width: 25rem;
+    background-image: url(../Mirva/imgs/corgi.jpg);
+    height: 40rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;   
 }
 
+
+
+
+    background-color: brown;
 
 .modal-content-container h1{
-    font-size: 1.rem;
+    font-size: 1.6rem;
     height: 3rem;
-    color: lightgray;
+    color: rgb(9, 1, 1);
     text-align: center;
 }
+
+/*Tämä nappi pitäisi vielä siirtää oikealle paikalle!!*/
+.modal-content-container button{}
+
+footer{
+    text-align: center;
+    background-color: pink;
+    height: 10%;
+}
+
+header{
+    
+    text-align:center;
+    height:10%;
+    background: fixed;
+
+}
+
+.pagename{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .grade-details{
     width: 15rem;
@@ -172,9 +256,8 @@ input[type=radio]:checked ~ .option {
 }
 
 .grade-details p{
-    color: white;
+    color: rgb(7, 6, 6);
     text-align: center;
-    font-size: large;
 }
 
 .modal-button-container{
@@ -190,12 +273,15 @@ input[type=radio]:checked ~ .option {
     height: 2rem;
     background: none;
     outline: none;
-    border: 1px solid rgb(252, 242, 241);
-    color: white;
-    font-size: 1.1rem;
+    border: 1px solid rgb(13, 13, 13);
+    color: rgb(8, 0, 0);
+    font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 20px;
-
+    border-radius: 10px;
+}
+.modal-button-container button:hover{
+    background-color: rgb(242, 154, 46);
+}
 
 @media(min-width : 300px) and (max-width : 350px){
     .game-quiz-container{
