@@ -3,9 +3,40 @@ header{
     font-size: 40px;
     text-align: center;
     padding: 10px;
+}
+.container{
+display: grid;
+height:100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+}
 
+nav{
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+
+}
+
+header{
+    background-color: brown;
     
-    
+}
 
+footer{
+    background-color: rgb(61, 169, 133);
 
+}
 
+#sidebar{
+    background-color: rgb(82, 177, 92);
+}
+#content1{
+    background-color: rgb(51, 173, 173);
+}
+#content2{
+    background-color: rgb(48, 48, 167);
+}
+#content3{
+    background-color: rgb(160, 99, 24);
+}
