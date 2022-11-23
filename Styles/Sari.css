@@ -43,6 +43,7 @@ img{
 #question{
     margin-bottom: 1rem;
 }
+
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
@@ -98,7 +99,7 @@ button:active{
 #scoreboard,#answerBank{
     width: 20rem;
     background: #ffffcf;
-    padding: 2rem;
+    padding: 2em;
     text-align: center;
     margin: auto;
     position: relative;
@@ -106,11 +107,13 @@ button:active{
     bottom: 20em;
     display: none;
     border-radius: 5em;
+    height: 40em;
 }
+
 #answerBank img{
-height: 10em;
 width: 10em;
 }
+
 #score-title{
     margin: 1rem 0;
 }

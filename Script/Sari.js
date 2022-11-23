@@ -119,11 +119,6 @@ function nextQuestion(){
 
 
 
-
-
-
-
-
 //function getImage(scoreboard)
 
 //let image = "";
@@ -146,9 +141,9 @@ function nextQuestion(){
 //    image = "../images/purkki4.png"
 //}
 //back to quiz buttton event
-//function backToQuiz(){
-//    location.reload();
-//}
+function backToQuiz(){
+    location.reload();
+}
 //yrittää olla kuvan vaihtaja
 //function getImage(answerBank)
 
@@ -171,6 +166,8 @@ function nextQuestion(){
 //if(imagePlace = 5){
 //    image = "../images/purkki4.png"
 //}
+
+
 //function to check answers
 function checkAnswer(){
     let answerBank = document.getElementById("answerBank");
@@ -187,3 +184,4 @@ function checkAnswer(){
 
 }
 displayQuestion();
+//https://www.youtube.com/watch?v=2jwdyO_UunE&t=121s//
