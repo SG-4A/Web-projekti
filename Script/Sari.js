@@ -7,8 +7,8 @@ let questionBank = [
     },
     {
         question : "Kuka keksi puhelimen?", 
-        option : ["Steve Jobs","Elon Musk","Alexander Graham Bel","Bill Gates"],
-        answer : "Alexander Graham Bel"
+        option : ["Antonio Meucc","Elon Musk","Alexander Graham Bel","Steve Jobs"],
+        answer : "Antonio Meucc"
     },
     {
         question : "Mikä maa käytti ensimmäisenä paperi rahaa?", 
@@ -179,8 +179,9 @@ function checkAnswer(){
         let list = document.createElement("li");
         list.innerHTML = questionBank[a].answer;
         answers.appendChild(list);
-
+        
     }
+    
 
 }
 displayQuestion();

@@ -1,9 +1,9 @@
-/*header{
+header{
     background-color: rgb(198, 223, 147);
     font-size: 40px;
     text-align: center;
     padding: 10px;
-}*/
+}
 .container{
 display: grid;
 height:100vh;
@@ -13,25 +13,30 @@ grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
 
 nav{
     background-color: blue;
+    position: fixed;
+    bottom: 0;
+
 }
 
-main{
+header{
     background-color: brown;
+    
 }
 
 footer{
-    background-color: aquamarine;
+    background-color: rgb(61, 169, 133);
+
 }
 
 #sidebar{
-    background-color: bisque;
+    background-color: rgb(82, 177, 92);
 }
 #content1{
-    background-color: azure;
+    background-color: rgb(51, 173, 173);
 }
 #content2{
-    background-color: rgb(93, 93, 124);
+    background-color: rgb(48, 48, 167);
 }
 #content3{
-    background-color: rgb(152, 103, 43);
+    background-color: rgb(160, 99, 24);
 }
