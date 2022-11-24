@@ -5,12 +5,7 @@ header{
     padding: 10px;
     grid-column: 1/6;
 }
-.container{
-display: grid;
-height:100vh;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-}
+
 
 nav{
     background-color: blue;
@@ -26,8 +21,12 @@ header{
 }
 
 footer{
-    background-color: rgb(61, 169, 133);
-    grid-column:1/6 ;
+    background-color: rgb(58, 69, 65);
+    font-size: 0.3em;
+    color: #ecce24;
+    height: 20em;
+    align-items: center;
+    padding-top: 5em;
 
 }
 
