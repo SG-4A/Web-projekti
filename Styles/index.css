@@ -3,6 +3,7 @@ header{
     font-size: 40px;
     text-align: center;
     padding: 10px;
+    grid-column: 1/6;
 }
 .container{
 display: grid;
@@ -15,16 +16,18 @@ nav{
     background-color: blue;
     position: fixed;
     bottom: 0;
-
+    grid-row: 1/4;
 }
+
 
 header{
     background-color: brown;
-    
+      
 }
 
 footer{
     background-color: rgb(61, 169, 133);
+    grid-column:1/6 ;
 
 }
 
@@ -38,5 +41,10 @@ footer{
     background-color: rgb(48, 48, 167);
 }
 #content3{
-    background-color: rgb(160, 99, 24);
+    background-color: rgb(160, 99, 24);
 }
+header{
+    background-color: rgb(198, 223, 147);
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;}
