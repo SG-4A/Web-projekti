@@ -15,11 +15,6 @@ nav{
 }
 
 
-header{
-    background-color: brown;
-      
-}
-
 footer{
     background-color: rgb(58, 69, 65);
     font-size: 0.3em;
@@ -42,8 +37,11 @@ footer{
 #content3{
     background-color: rgb(160, 99, 24);
 }
-header{
-    background-color: rgb(198, 223, 147);
-    font-size: 40px;
-    text-align: center;
-    padding: 10px;}
+
+#article{
+    background-image: url(../Mirva/imgs/students-3518726_640.jpg);
+    background-position:bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
