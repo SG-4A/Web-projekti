@@ -3,32 +3,32 @@
 let questionBank = [
     {
         question: "Oranssi?",
-        options: ["Yellow", "Orange", "Brown"],
+        options: ["Yellow", "Orange", "Brown", "Green"],
         answer: "Orange"
     },
 
     {
         question: "Sininen?",
-        options: ["Blue", "Pink", "Black"],
+        options: ["Blue", "Pink", "Black", "Brown"],
         answer: "Blue"
     },
 
     {
         question: "Keltainen?",
-        options: ["Brown", "Yellow", "White"],
+        options: ["Brown", "Yellow", "White", "Orange"],
         answer: "Yellow",
     },
 
     {
         question: "Punainen?",
-        options: ["Green", "Pink", "Red"],
+        options: ["Green", "Pink", "Red", "Brown"],
         answer: "Red",
     },
 
    {
         question: "Vihreä?",
-        options: ["Brown", "Purpple", "Green"],
-        answer: "Orange"
+        options: ["Brown", "Purpple", "Green", "Red"],
+        answer: "Green"
     },
 
 ]
@@ -40,7 +40,7 @@ let option0= document.getElementById("option0");
 let option1= document.getElementById("option1");
 let option2= document.getElementById("option2");
 let option3= document.getElementById("option3");
-let next= document.querySelectorAll(".next");
+let next= document.querySelector(".next");
 let points= document.getElementById("score");
 let span= document.querySelectorAll("span");
 let i=0;
@@ -52,17 +52,16 @@ function displayQuestion(){
     for(let a=0;a<span.length;a++){
         span[a].style.background="none";
     }
-    question.innerHTML= "Q."+(i+1)+" " +questionBank[i].question;
+    question.innerHTML= " "+(i+1)+" " +questionBank[i].question;
     option0.innerHTML= questionBank[i].option[0];
     option1.innerHTML= questionBank[i].option[1];
     option2.innerHTML= questionBank[i].option[2];
     option3.innerHTML= questionBank[i].option[3];
-    stat.innerHTML= "Question"+" "+(i+1)+" "+"/"+" "+questionBank.lenght;
-    
+    stat.innerHTML= "Kysymykset"+" "+(i+1)+" "+"/"+" "+questionBank.length;
 }
 
 //calculat function
-function calcScore(e){
+function calscore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
        score= score+1;
@@ -76,13 +75,13 @@ function calcScore(e){
 
 //fuction to display next question
 function nextQuestion(){
-    if(i<questionBan.lenght-1)
+    if(i<questionBank.length-1)
     {
         i=i+1;
         displayQuestion();        
     }
     else{
-        points.innerHTML= score+ "/"+questionBank.lenght;
+        points.innerHTML= score+ "/"+ questionBank.length;
         quizContainer.style.display= "block"
     }
 }
@@ -108,3 +107,4 @@ function checkAnswer(){
         answers.appendChild(list);
     }
 }
+displayQuestion();
