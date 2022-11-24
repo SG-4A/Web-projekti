@@ -38,6 +38,7 @@ img{
     background: #409299;
     cursor: default;
     border-radius: 1rem;
+    width: 30%;
 }
 
 #question{
