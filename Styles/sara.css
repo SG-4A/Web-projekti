@@ -1,6 +1,37 @@
-#container{
+body{
+    background-image: url(/Images/fireflies-g2069e5286_1920.jpg);
+}
+h1{
+    background-color: silver;
+    margin:10px;
+    text-align: center;
+}
+#container, #scores, #answers{
     background-color: bisque;
+    opacity:85%;
+    width:50%;
+    margin:auto;
+    border-radius:5px;
+    
+    
+    
 }
 .hidden{
     display:none;
+}
+.opt{
+    border: 1px solid black;
+    font-size: 1.2em;
+    background-color: lightgray;
+}
+.mainButtons{
+    margin:10px;
+   
+    
+}
+
+img{
+    height:300px;
+    
+    
 }
