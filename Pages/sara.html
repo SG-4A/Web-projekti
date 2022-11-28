@@ -34,23 +34,32 @@
 <!--Divi joka sisältää kysymykset päättyy tähän-->
    <div id="buttons">
    <button type="button" class="next">Seuraava kysymys</button>
+   <button type="button" class="mainButtons" onclick="backToQuiz()"> Takaisin alkuun</button>
    </div>
 
  </div>
    <!--Divi joka sisältää koko visan loppuu tähän-->
 
    <!---Tulostaulu alkaa tästä-->
-   <div id="scores">
-      <div id="scorepicture"></div>
-      <h3 id="scoreTitle">Sinun tuloksesi:</h3>
-      <p id="yourScoreHere"></p>
-      <button id="backbutton" onclick="backToQuiz()"> Takaisin kyselyyn</button>
-      <button id="CheckAnswers" onclick="checkAnswers()">Tarkista vastauksesi</button>
+   <div id="scores" class="hidden">
+      <div id="scorePicture">
+         <img src="/Images/purkki 0.png" alt="" id="pointsOne" class="hidden">
+         <img src="/Images/purkki 1.png" alt="" id="pointsTwo" class="hidden">
+         <img src="/Images/purkki 2.png" alt=""id="pointsThree" class="hidden">
+         <img src="/Images/purkki 3.png" alt="" id="pointsFour" class="hidden">
+         <img src="/Images/purkki 4.png" alt="" id="pointsFive" class="hidden">
+      </div>
+      <h3 id="scoreTitle">Tulikärpäsiä kerätty <p id="yourScoreHere"></p></h3>
+      
+      <p id="answerComment"></p>
+      <button id="backbutton" class="mainButtons" onclick="backToQuiz()"> Takaisin kyselyyn</button>
+      <button id="extraButton" class="mainButtons hidden" onclick="backToQuiz()"> Yritä uudelleen</button>
+      <button id="CheckAnswers" class="mainButtons" onclick="checkAnswers()">Tarkista vastauksesi</button>
    </div>
    <!--Tulostaulun divi päättyy-->
 
    <!---Vastaustaulu alkaa tästä-->
-   <div id="answers">
+   <div id="answers" class="hidden">
       <h3 id="a">Vastaukset:</h3>
       <ol id="answerList">
 
