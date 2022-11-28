@@ -4,33 +4,33 @@
 
 let questions =[
 {
-    q: "Kysymys 1",
-    o: ["Vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
-    a: "vaihtoehto2"
+    q: "Mikä on sanan oikeinkirjoitettu muoto?",
+    o: ["avaruus-asema", "avaruusasema", "avaruus asema"],
+    a: "avaruusasema"
 },
 
 {
-    q: "kysymys 2",
-    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
-    a: "vaihtoehto3"
+    q: "Mikä näistä vaihtoehdoista on oikein?",
+    o: ["suomen kieli", "suomen-kieli", "suomenkieli"],
+    a: "suomenkieli"
 },
 
 {
-    q: "kysymys3",
-    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
-    a: "vaihtoehto3"
+    q: "Mikä seuraavista sanoista on kirjoitettu oikein?",
+    o: ["mikroaalto-uuni", "sähkö hammas harja", "sapelihammastiikeri"],
+    a: "sapelihammastiikeri"
 },
 
 {
-    q: "kysymys4",
-    o: ["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
-    a: "vaihtoehto1"
+    q: "Valitse oikea vaihtoehto:",
+    o: ["punainen ruusu", "punainenruusu", "punainen-ruusu"],
+    a: "punainen ruusu"
 },
 
 {
-    q: "kysymys5",
-    o:["vaihtoehto1", "vaihtoehto2", "vaihtoehto3"],
-    a:"vaihtoehto1"
+    q: "Viimeinen kysymys! Mikä näistä on kirjoitettu oikein?",
+    o:["tuote-esittely", "tuoteesittely", "tuote esittely"],
+    a:"tuote-esittely"
 },
 ]
 
