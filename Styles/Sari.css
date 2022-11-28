@@ -33,16 +33,21 @@ img{
 
 .questions{
     margin: 3rem auto;
-    width: 90vw;
     padding: 2rem;
     background: #409299;
     cursor: default;
     border-radius: 1rem;
-    width: 30%;
+    width: 40%;
+
+}
+
+.option{
+    margin-left: 25%;
 }
 
 #question{
     margin-bottom: 1rem;
+    
 }
 
 .option{
