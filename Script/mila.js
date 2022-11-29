@@ -3,31 +3,31 @@
 let questionBank = [
     {
         question: "Oranssi?",
-        options: ["Yellow", "Orange", "Brown", "Green"],
+        option: ["Yellow", "Orange", "Brown", "Green"],
         answer: "Orange"
     },
 
     {
         question: "Sininen?",
-        options: ["Blue", "Pink", "Black", "Brown"],
+        option: ["Blue", "Pink", "Black", "Brown"],
         answer: "Blue"
     },
 
     {
         question: "Keltainen?",
-        options: ["Brown", "Yellow", "White", "Orange"],
+        option: ["Brown", "Yellow", "White", "Orange"],
         answer: "Yellow",
     },
 
     {
         question: "Punainen?",
-        options: ["Green", "Pink", "Red", "Brown"],
+        option: ["Green", "Pink", "Red", "Brown"],
         answer: "Red",
     },
 
    {
         question: "Vihreä?",
-        options: ["Brown", "Purpple", "Green", "Red"],
+        option: ["Brown", "Purpple", "Green", "Red"],
         answer: "Green"
     },
 
@@ -61,7 +61,7 @@ function displayQuestion(){
 }
 
 //calculat function
-function calscore(e){
+function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
        score= score+1;
@@ -82,7 +82,8 @@ function nextQuestion(){
     }
     else{
         points.innerHTML= score+ "/"+ questionBank.length;
-        quizContainer.style.display= "block"
+        quizContainer.style.display= "none";
+        scoreboard.style.display= "block";
     }
 }
 
@@ -99,7 +100,7 @@ function checkAnswer(){
     let answerBank= document.getElementById("answerBank");
     let answers= document.getElementById("answers");
     answerBank.style.display= "block";
-    scoreboard.style.display= "block";
+    scorecard.style.display= "none";
     for(let a=0;a<questionBank.length;a++)
     {
         let list= document.createElement("li");
