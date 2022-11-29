@@ -1,3 +1,9 @@
+body{
+    margin:auto;
+    background-image: url(/Images/fern-g689e9ca68_1920.jpg);
+    padding:15px;
+}
+
 header{
     background-color: rgb(198, 223, 147);
     font-size: 40px;
@@ -43,5 +49,6 @@ footer{
     background-position:bottom center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
   
