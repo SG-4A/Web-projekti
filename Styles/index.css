@@ -48,5 +48,10 @@ footer{
     background-color: #EDE9E8;
     opacity: 80%;
     color: black;
+    text-align: left;
+}
+#bunny{
+    float: right;
+    
 }
   
