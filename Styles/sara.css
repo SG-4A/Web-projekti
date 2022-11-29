@@ -1,17 +1,31 @@
 body{
     background-image: url(/Images/sarantausta.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-    background-color: silver;
-    margin:10px;
+    background-color:#a83d67;
+    margin:20px;
     text-align: center;
+    width:50%;
+    position: relative;
+    left:24%;
+    opacity:80%;
+    color:#0c2b2f;
+    
+    
+    
+
 }
 #container, #scores, #answers{
-    background-color: bisque;
-    opacity:85%;
+    background-color:#358c7f;
+    opacity:90%;
     width:50%;
     margin:auto;
-    border-radius:5px;
+    border-radius:7px;
+    border: 3px solid #0c2b2f;
+    text-align: center;
     
     
     
@@ -20,18 +34,25 @@ h1{
     display:none;
 }
 .opt{
-    border: 1px solid black;
+    border: 3px solid #0c2b2f;
     font-size: 1.2em;
-    background-color: lightgray;
+    background-color:#479fad;
+    margin:5px;
+    padding:5px;
 }
 .mainButtons{
     margin:10px;
+    background-color:#a83d67;
+   
    
     
 }
 
 img{
-    height:300px;
+    height:310px;
+    margin-top:10px;
+    position:relative;
+    top:30px;
     
     
 }
