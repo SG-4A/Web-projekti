@@ -39,6 +39,15 @@ let points = document.getElementById("score");
 let span = document.querySelectorAll("span");
 let i=0;
 let score= 0;
+const PERFECT ="Mahtavaa sait täydet pisteet ja keräsit kaikki tulikärpäset!"
+const GOOD = "Hienoa työtä! Keräsit melkein kaikki tulikärpäset!"
+const AVERAGE = "Hyvää työtä! Seuraavalla kerralla saat varmasti kaikki tulikärpäset!"
+const POOR = "Onnistut varmasti paremmin ensikerralla! Yritä visaa uudestaan."
+const IMAGE0 = document.getElementById("pointsOne");
+const IMAGE1 = document.getElementById("pointsTwo");
+const IMAGE2 = document.getElementById("pointsThree");
+const IMAGE3 = document.getElementById("pointsFour");
+const IMAGE4 = document.getElementById("pointsFive");
 
 //function to display questions
 function displayQuestion(){
@@ -74,9 +83,32 @@ function nextQuestion(){
         displayQuestion();
     }
     else{
-        points.innerHTML = score+ "/"+ questionBank.length;
-        quizContainer.style.display = "none";
-        scoreboard.style.display= "block"
+        finalScore.innerHTML= points+ "/"+ questions.length;
+        quiz.style.display= "none";
+        scoreBoard.style.display= "block"
+        if(points===5){
+            document.getElementById("answerComment").textContent= PERFECT;
+            IMAGE4.classList.remove("hidden");
+        } else if (points===4){
+            document.getElementById("answerComment").textContent= GOOD;
+            IMAGE3.classList.remove("hidden");
+        } else if(points===3){
+            document.getElementById("answerComment").textContent= AVERAGE;
+            IMAGE2.classList.remove("hidden");
+            hideButton.classList.add("hidden");
+            showButton.classList.remove("hidden");
+        } else if (points===2){
+            document.getElementById("answerComment").textContent= POOR;
+            IMAGE1.classList.remove("hidden");
+            hideButton.classList.add("hidden");
+            showButton.classList.remove("hidden");
+        } else if (points===0 || points===1){
+            document.getElementById("answerComment").textContent= POOR;
+            IMAGE0.classList.remove("hidden");
+            hideButton.classList.add("hidden");
+            showButton.classList.remove("hidden");
+            
+        }
     }
 }
 

@@ -35,13 +35,21 @@
     </div>
 
     <!--Scoreboard section-->
-<div id="scoreboard">
-    <img src="../Images/Nimetön.png" alt="" style="height:20em ;">
-    <h2 id="score-title">Tulikärpäsiä purkissasi</h2>
-    <h2 id="score"></h2>
-    <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin kyselyyn</button>
-    <button type="button" id="check-answer" onclick="checkAnswer()">Tarkista vastaukset</button>
-</div>
+    <div id="scoreboard" class="hidden">
+        <div id="scorePicture">
+           <img src="/Images/purkki 0.png" alt="" id="pointsOne" class="hidden">
+           <img src="/Images/purkki 1.png" alt="" id="pointsTwo" class="hidden">
+           <img src="/Images/purkki 2.png" alt=""id="pointsThree" class="hidden">
+           <img src="/Images/purkki 3.png" alt="" id="pointsFour" class="hidden">
+           <img src="/Images/purkki 4.png" alt="" id="pointsFive" class="hidden">
+        </div>
+        <h3 id="scoreTitle">Tulikärpäsiä purkissasi <p id="yourScoreHere"></p></h3>
+        
+        <p id="answerComment"></p>
+        <button id="backbutton" class="mainButtons" onclick="backToQuiz()"> Uudestaan</button>
+        <button id="CheckAnswers" class="mainButtons" onclick="checkAnswers()">Tarkista vastaukset</button>
+     </div>
+
 
 
 
