@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Englannin visa</title>
-    
+
     <link rel="stylesheet" href="../Styles/mila.css">
     <script src="../Script/mila.js" defer></script>
- 
-
 </head>
+
 <body>
-    
-<div id="quiz-container">
-    
-    <div class="questions">
-        
-        <h2> Valitse oikea sana</h2>
-        <h2 id="question"></h2>
-       
-        <ol type="A">
-            <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option1"  onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option2"  onclick="calcScore(this)"></span></li>
-            <li class="option"><span id="option3" onclick="calcScore(this)" ></span></li>
-        </ol>
-        <h4 id="stat"></h4>
-    </div>
-    <div class="buttons">
+    <div id="quiz-container">
+
+        <div class="questions">
+
+            <h2 id="question">Kysymys</h2>
+
+            <ol type="A">
+                <li id="option00" class="option"><span id="option0"></span></li>
+                <li id="option10" class="option"><span id="option1"></span></li>
+                <li id="option20" class="option"><span id="option2"></span></li>
+                <li id="option30"class="option"><span id="option3"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+        <!--<div class="buttons">
         <button type="button" class="next">Seuraava</button>
+    </div>-->
+        <!--scoreboard section-->
+        <div id="scoreboard">
+            <img src="../Images/Nimetön.png" alt="">
+            <h2 id="score-title">Tulikärpäsiä purkissasi</h2>
+            <h2 id="score"></h2>
+            <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin peliin</button>
+            <button type="button" id="check-answer" onclick="checkAnswer()">Tarkista vastaukset</button>
+        </div>
+
+        <!--answer-->
+
+        <div id="answerBank">
+            <h2>Vastaukset: </h2>
+            <ol type="1" id="answers">
+            </ol>
+            <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin peliin</button>
+        </div>
     </div>
-<!--scoreboard section-->
-    <div id="scoreboard">
-        <img src="../Images/Nimetön.png" alt="">
-        <h2 id="score-title">Tulikärpäsiä purkissasi</h2>
-        <h2 id="score"></h2>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin peliin</button>
-        <button type="button" id="scheck-answer" onclick="checkAnswer()">Tarkista vastaukset</button>
-    </div>
-
-    <!--answer-->
-
-<div id="answerBank">
-    <h2>Vastaukset: </h2>
-    <ol type="1" id="answers">
-
-    </ol>
-
-    <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin peliin</button>
-</div>
-
-
-
-
-
-
-
-
-  
 </body>
 </html>
