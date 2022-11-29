@@ -22,26 +22,13 @@ nav{
 
 
 footer{
-    background-color: rgb(58, 69, 65);
+    background-color: rgb(51, 79, 69);
     font-size: 0.3em;
     color: #ecce24;
     height: 20em;
     align-items: center;
     padding-top: 5em;
 
-}
-
-#sidebar{
-    background-color: rgb(82, 177, 92);
-}
-#content1{
-    background-color: rgb(51, 173, 173);
-}
-#content2{
-    background-color: rgb(48, 48, 167);
-}
-#content3{
-    background-color: rgb(160, 99, 24);
 }
 
 #article{
