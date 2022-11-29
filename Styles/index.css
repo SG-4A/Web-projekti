@@ -31,12 +31,11 @@ nav{
 
 footer{
     background-color: #102601;
-    font-size: 0.3em;
+    font-size: 0.6em;
     color: #ecce24;
     height: 20em;
     align-items: center;
     padding-top: 5em;
-
 }
 
 #article{
@@ -50,6 +49,7 @@ footer{
     color: black;
     text-align: left;
 }
+
 #bunny{
     float: right;
     
