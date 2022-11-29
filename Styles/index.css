@@ -2,6 +2,7 @@
 .navbar-custom {
     background-color: #EDE9E8 !important;
     opacity:80%;
+    border: 2px solid #463731;
     
 }
 
@@ -20,7 +21,7 @@ header{
     text-align: center;
     padding: 10px;
     font-family: 'Patrick Hand SC', cursive;
-    color: #ecce24;
+    color: #ecce24;    
 }
 
 
@@ -71,5 +72,9 @@ footer{
     padding-top: 5em;
     font-family: 'Patrick Hand SC', cursive;
 
+}
+
+img{
+    padding: 5px;
 }
   

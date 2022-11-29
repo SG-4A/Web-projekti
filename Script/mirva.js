@@ -10,7 +10,7 @@
     },
 
     {
-        question: "Montako jalkaa on hämähäkillä ?",
+        question: "Montako jalkaa hämähäkillä on ?",
         optionA: "4",
         optionB: "8",
         optionC: "9",
@@ -21,14 +21,14 @@
     {
         question: "Missä ihmisen sydän sijaitsee ?",
         optionA: "Päässä",
-        optionB: "Oikealla rintakehässä",
+        optionB: "Oikealla rintakehällä",
         optionC: "Alhaalla vatsassa",
-        optionD: "Vasemmalla rintakehässä",
+        optionD: "Vasemmalla rintakehällä",
         correctOption: "optionD"
     },
 
     {
-        question: "Kuinka monta vuodenaikaa meillä on?",
+        question: "Kuinka monta vuodenaikaa on olemassa?",
         optionA: "3",
         optionB: "12",
         optionC: "4",
