@@ -9,6 +9,8 @@
 body{
     margin:auto;
     background-image: url(/Images/background-g6eefcd23f_1920.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     padding:15px;
 }
 
@@ -17,17 +19,16 @@ header{
     font-size: 40px;
     text-align: center;
     padding: 10px;
-    grid-column: 1/6;
     font-family: 'Patrick Hand SC', cursive;
     color: #ecce24;
 }
 
 
 nav{
-    position: fixed;
+    margin-top: 5px;
+    margin-bottom:5px;
     bottom: 0;
     font-family: 'Patrick Hand SC', cursive;
-    grid-row: 1/4;
    
 }
 
@@ -43,6 +44,7 @@ nav{
     color: black;
     text-align: left;
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
 }
 #indexTitle{
     margin:5px;
