@@ -27,12 +27,13 @@ let questionBank = [
 
     {
         question: "vihreä",
-        option: ["Brown", "Purpple", "Green", "Red"],
+        option: ["Brown", "Purple", "Green", "Red"],
         answer: "Green"
     },
 ]
 
 let question = document.getElementById("question");
+let questions = document.getElementById("questions");
 let quizContainer = document.getElementById("quiz-container");
 let scoreboard = document.getElementById("scoreboard");
 let option0 = document.getElementById("option0");
@@ -53,6 +54,7 @@ function displayQuestion() {
     }*/
     for (let a = 0; a < span.length; a++) {
         span[a].style.background = "none";
+        span[a].parentElement.style.background = "burlywood";
     }
     
     question.innerHTML = "Mikä on englanniksi " + questionBank[i].question + "?";
@@ -68,12 +70,13 @@ function calcScore(e) {
     //console.log("Valittu: ");// + e.innerHTML);
     //console.log("Vastaus: " + questionBank[i].answer);
     if (e.target.innerHTML === questionBank[i].answer && score < questionBank.length) {
-        e.target.score = score + 1;
+        score = score + 1;
+        document.getElementById(e.target.id).parentElement.style.background = "#07eb1a";
         document.getElementById(e.target.id).style.background = "#07eb1a";
-        //document.getElementById(e.id + "0").style.background = "#07eb1a";
         //console.log(e.id);
     }
     else {
+        document.getElementById(e.target.id).parentElement.style.background = "#eb0b07";
         document.getElementById(e.target.id).style.background = "#eb0b07";
         //document.getElementById(e.id + "0").style.background = "#eb0b07";
     }
@@ -88,7 +91,7 @@ function nextQuestion() {
     }
     else {
         points.innerHTML = score + "/" + questionBank.length;
-        quizContainer.style.display = "none";
+        questions.style.display = "none";
         scoreboard.style.display = "block";
     }
 }
