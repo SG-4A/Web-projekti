@@ -10,13 +10,15 @@ header{
     text-align: center;
     padding: 10px;
     grid-column: 1/6;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ecce24;
 }
 
 
 nav{
-    
     position: fixed;
     bottom: 0;
+    font-family: 'Patrick Hand SC', cursive;
     grid-row: 1/4;
    
 }
@@ -36,6 +38,7 @@ footer{
     height: 20em;
     align-items: center;
     padding-top: 5em;
+    font-family: 'Patrick Hand SC', cursive;
 
 }
 
@@ -49,6 +52,7 @@ footer{
     opacity: 80%;
     color: black;
     text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
 }
 #bunny{
     float: right;
