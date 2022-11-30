@@ -1,6 +1,6 @@
 .navbar-custom {
     background-color: #EDE9E8 !important;
-    opacity:80%;
+    opacity:90%;
     border: 2px solid #463731;
     
 }
@@ -58,7 +58,7 @@ footer{
 }
 body{
     font-family: sans-serif;
-    background: url(../Images/Sari/night-3078326_960_720.jpg);
+    background: url(../Images/Sari/forest-of-magic-g8052f1e42_1280.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,10 +83,10 @@ body{
 .questions{
     margin: 3rem auto;
     padding: 2rem;
-    background: #409299;
+    background: #3cff00;
     cursor: default;
     border-radius: 1rem;
-    width: 85%;
+    width: 95%;
 }
 
 .option{
@@ -96,14 +96,15 @@ body{
 #question{
     margin-bottom: 1rem;
     margin-right: 10%;
+    color: pink;
 }
 
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    border-bottom: solid 0.1rem #409299;
+    border-bottom: solid 0.1rem #c7af26;
     width: 15rem;
-    background: #55dae69c;
+    background: #ecce24;
     border-radius: 1rem;
 }
 
@@ -114,7 +115,7 @@ body{
 ol{
     position: relative;
     padding: 0 1.5rem;
-    color: #104044;
+    color: #ff0000;
 }
 
 span{
@@ -129,7 +130,7 @@ span{
 
 #stat{
     margin-top: 1.5;
-    color: #104044;
+    color: #f10000;
 }
 
 .buttons{
@@ -191,7 +192,7 @@ width: 10em;
 }
 
 h1{
-    color:#104044;
+    color:#194410;
     background-color: #ecce24;
     opacity: 65%;
     width: 10em;
