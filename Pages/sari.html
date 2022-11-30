@@ -9,11 +9,89 @@
     <script src="../Script/Sari.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/36d41c07ab.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/36d41c07ab.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 </head>
 <body>
  
-<!--visa-->
-    <div id="quiz-container" style="text-align: center;">
+<!--Bootstrapin Gridi alkaa tästä:-->
+
+<div class="container text-center">
+    <div class="row">
+      <div class="col-12" id="Header">
+        <header > <img  src="/Images/logo/Component 6.png" alt="">Web-projekti</header>
+        
+        <!--Header tähän väliin-->
+        
+      </div>
+
+      <!--Bootstrapin navi alkaa-->
+      <div class="col-3" id="navi">
+        
+        <div id="Äidinkieli">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/sara.html">
+              <img src="../Images/äidinkieli1.png" width="100" height="60" class="d-inline-block align-top" alt="">
+              ÄIDINKIELI
+            </a>
+          </nav>
+        </div>
+          
+        <div id="Historia">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/sari.html">
+              <img src="../Images/historia1.png" width="100" height="60" class="d-inline-block align-top" alt="">
+            HISTORIA
+            </a>
+          </nav>
+        </div>
+          
+        <div id="Biologia">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/mirva.html">
+              <img src="../Images/biologia1.png" width="100" height="70" class="d-inline-block align-top" alt="">
+              BIOLOGIA
+            </a>
+          </nav>
+        </div>
+          
+        <div id="Maantieto">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/nikita.html">
+              <img src="../Images/maantieto1.png" width="80" height="50" class="d-inline-block align-top" alt="">
+              MAANTIETO
+            </a>
+          </nav>
+        </div>
+          
+        <div id="Matematiikka">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/sanna.html">
+              <img src="../Images/math.png" width="80" height="50" class="d-inline-block align-top" alt="">
+              MATEMATIIKKA
+            </a>
+          </nav>
+        </div>
+
+        <div id="Englanti">
+          <nav class="navbar navbar-light bg-light navbar-custom">
+            <a class="navbar-brand" href="../Pages/mila.html">
+              <img src="../Images/englanti (1).jpg" width="80" height="50" class="d-inline-block align-top" alt="">
+              ENGLANTI
+            </a>
+          </nav>
+        </div>
+      </div>
+      <!--bootstrapin navi loppuu-->
+      <!--<div class="col-9" id="article">-->
+        <!--Tähän väliin sivun sisältö-->
+      
+        <!--visa-->
+    <div class="col-9" id="quiz-container" style="text-align: center;">
+        <h1>Historian visa</h1>
         <div class="questions">
             <h2 id="question"></h2>
             <ol type="A">
@@ -37,6 +115,7 @@
     <!--Scoreboard section-->
     <div id="scoreboard" class="hidden">
         <div id="scorePicture">
+           <img src="/Images/Nimetön.png" alt="" id="pointsZero" class="hidden">
            <img src="/Images/purkki 0.png" alt="" id="pointsOne" class="hidden">
            <img src="/Images/purkki 1.png" alt="" id="pointsTwo" class="hidden">
            <img src="/Images/purkki 2.png" alt=""id="pointsThree" class="hidden">
@@ -52,41 +131,44 @@
 
 
 
-
-
 <!--Vastaus valikko-->
 
-<div id="answerBank">
-    <h2>Vastaukset : </h2>
-    <ol type="1" id="answers">
+    <div id="answerBank">
+        <h2>Vastaukset : </h2>
+        <ol type="1" id="answers">
 
-    </ol>
-    <div style="text-align:left ; font-size: x-small;">
-        <p>Ensimmäiset nykyajan olympiakisat järjestettiin Ateenassa vuonna 1896.</p>
-        <p>Puhelimen keksijänä pidetään Alexander Graham Belliä, joka esitteli ja patentoi keksintönsä vuonna 1876. Nykyään tiedetään että keksijä oli italialainen Antonio Meucc, jolla ei ollut varaa patentoida keksintöään.</p>
-        <p>Setelit keksittiin tarpeeseen kun kolikoita oli liian helppo väärentää ja ne olivat todella painavia kantaa mukana.</p>
-        <p>Ajatuksen Vapaudenpatsaasta Ranskan lahjana Yhdysvalloille esitti vuonna 1865 ranskalainen runoilija ja oikeustieteen professori Édouard René de Laboulaye. Patsaan suunnitteli ranskalainen kuvanveistäjä Frédéric Auguste Bartholdi.</p>
-        <p>Itsenäistymismahdollisuuden käsittely Suomessa alkoi keväällä 1917. Itsenäisyysjulistus hyväksyttiin Suomen eduskunnassa 6. joulukuuta samana vuonna.</p>
+        </ol>
+        <div style="text-align:left ; font-size: x-small;">
+            <p>Ensimmäiset nykyajan olympiakisat järjestettiin Ateenassa vuonna 1896.</p>
+            <p>Puhelimen keksijänä pidetään Alexander Graham Belliä, joka esitteli ja patentoi keksintönsä vuonna 1876. Nykyään tiedetään että keksijä oli italialainen Antonio Meucc, jolla ei ollut varaa patentoida keksintöään.</p>
+            <p>Setelit keksittiin tarpeeseen kun kolikoita oli liian helppo väärentää ja ne olivat todella painavia kantaa mukana.</p>
+            <p>Ajatuksen Vapaudenpatsaasta Ranskan lahjana Yhdysvalloille esitti vuonna 1865 ranskalainen runoilija ja oikeustieteen professori Édouard René de Laboulaye. Patsaan suunnitteli ranskalainen kuvanveistäjä Frédéric Auguste Bartholdi.</p>
+            <p>Itsenäistymismahdollisuuden käsittely Suomessa alkoi keväällä 1917. Itsenäisyysjulistus hyväksyttiin Suomen eduskunnassa 6. joulukuuta samana vuonna.</p>
+        </div>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin kyselyyn</button>
     </div>
-    <button type="button" id="score-btn" onclick="backToQuiz()">Takaisin kyselyyn</button>
-</div>
 
-<div class="container">
+    <div class="container">
+       
+
+        <!--Sivun sisällön koodit loppuu-->
+        
+      </div>
+      <div class="col-12" id="footer">
+        <!--Footerin koodi alkaa-->
+        <footer>
     
-  <!--footer alkaa-->
-    <footer style="background-color:#104044; color: aliceblue; position: fixed; bottom: 0;width: 100%;">
+          <div class="fa-3x">
+            <i class="fa-solid fa-crow fa-bounce"></i>
+          
+          © 2022 Copyright
       
-      <div class="fa-3x">
-        <i class="fa-solid fa-crow fa-bounce"></i>
-      
-      © 2022 Copyright
-  
-      <div> Mila Mirva Nikita Sanna Sara Sari</div>
-
-    </footer>
-<!--footer loppuu-->
-
-
+          <div> Mila Mirva Nikita Sanna Sara Sari</div>
+        </footer>
+      </div>
+      <!--Footerin koodit loppuu-->
+    </div>
+  </div>
 
 
 </body>
