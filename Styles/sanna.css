@@ -5,7 +5,7 @@
 }
 body{
     font-family: sans-serif;
-    background-image: url(../Images/vuorikuva.png);
+    background-image: url(../Images/wolf-g487dd002b_1920.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,15 +23,14 @@ img{
     text-align: center;
     padding: 0.8rem 0;
     font-size: 3rem;
-    color: black;
-    background-color: rgb(130, 130, 211);
+    color: lightskyblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .questions{
     margin: 3rem auto;
     width: 90vw;
     padding: 2rem;
-    background-color:rgb(89, 89, 177);
+    background-color:lightskyblue;
     border-radius: 1rem;
     width: 30%;
 }
@@ -76,20 +75,22 @@ button{
     font-size: 1.5rem;
     border-radius: 1.5rem;
     color:black;
-    background:rgb(158, 110, 204);
+    background:lightskyblue;
 }
 button:active{
     background: lavender;
 }
 #scoreboard,#answerBank{
     width: 20rem;
-    background:rgb(137, 137, 230);
+    background:rgb(84, 84, 228);
     padding: 2rem;
     text-align: center;
     margin: auto;
     position: relative;
     top: 5rem;
     display: none;
+    border-radius: 1.5rem;
+    opacity: 80%;
 }
 #score-title{
     margin: 1rem 0;
