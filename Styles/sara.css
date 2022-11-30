@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/Images/sarantausta.jpg);
+    background-image: url(../Images/sarantausta.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     font-family: Arial, Helvetica, sans-serif;
