@@ -1,8 +1,37 @@
+.navbar-custom {
+    background-color: #EDE9E8 !important;
+    opacity:80%;
+    border: 2px solid #463731;
+    
+}
+
 body{
     background-image: url(/Images/sarantausta.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #274247;
+    font-size: 4em;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ecce24;  
+}
+header img{
+    float: left;
+    padding-left: 6%;
+
+    
+    
+}
+nav{
+    margin-top: 5px;
+    margin-bottom:5px;
+    bottom: 0;
+    font-family: 'Patrick Hand SC', cursive;
+   
 }
 h1{
     background-color:#a83d67;
@@ -10,7 +39,7 @@ h1{
     text-align: center;
     width:50%;
     position: relative;
-    left:24%;
+    left:13%;
     opacity:80%;
     color:#0c2b2f;
     
@@ -22,7 +51,9 @@ h1{
     background-color:#358c7f;
     opacity:90%;
     width:50%;
-    margin:auto;
+    margin-bottom:5px;
+    position:relative;
+    left:15%;
     border-radius:7px;
     border: 3px solid #0c2b2f;
     text-align: center;
@@ -48,11 +79,22 @@ h1{
     
 }
 
-img{
-    height:310px;
+.prize{
+    height:280px;
     margin-top:10px;
     position:relative;
     top:30px;
     
     
+}
+footer{
+    background-color:#274247;
+    font-size: 0.3em;
+    color: #ecce24;
+    height: 20em;
+    align-items: center;
+    padding-top: 5em;
+    font-family: 'Patrick Hand SC', cursive;
+    
+
 }
