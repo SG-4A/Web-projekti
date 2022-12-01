@@ -9,7 +9,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background: url('/Images/Planet.jpg') no-repeat;
+    background: url('../Images/Planet.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
