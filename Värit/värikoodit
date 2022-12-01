@@ -4,7 +4,12 @@ Oikein väärin vastaukset:
 Vihreä: #57E30B
 Punainen : #E30B21 
 
-ruskea: #a76a3C
-        #81522e
+Tekstien keltainen väri Footer ja Header: #ecce24
 
-sininen: # 2e5d81
+
+Header & footer taustaväri: #463731
+
+Navin ja Articlen taustaväri: #EDE9E8;
+
+ Navin ja Articlen tausta läpinäkyvyys:
+ opacity: 80%

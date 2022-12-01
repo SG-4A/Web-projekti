@@ -1,42 +1,87 @@
-header{
-    background-color: rgb(198, 223, 147);
-    font-size: 40px;
-    text-align: center;
-    padding: 10px;
-}
-.container{
-display: grid;
-height:100vh;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-}
 
-nav{
-    background-color: blue;
-    position: fixed;
-    bottom: 0;
-
-}
-
-header{
-    background-color: brown;
+.navbar-custom {
+    background-color: #EDE9E8 !important;
+    opacity:80%;
+    border: 2px solid #463731;
     
 }
 
+
+body{
+    margin:auto;
+    background-image: url(../Images/background-g6eefcd23f_1920.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:15px;
+}
+
+header{
+    background-color: #274247;
+    font-size: 4em;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ecce24;  
+}
+header img{
+    float: left;
+    padding-left: 6%;
+
+    
+    
+}
+
+
+nav{
+    margin-top: 5px;
+    margin-bottom:5px;
+    bottom: 0;
+    font-family: 'Patrick Hand SC', cursive;
+   
+}
+
+
+#article{
+   
+    background-position:bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:978px;
+    background-color: #EDE9E8;
+    opacity: 80%;
+    color: black;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+#indexTitle{
+    margin:5px;
+}
+
+
+#bunny{
+    float:right;
+    display:flex;
+    
+}
+#bottle{
+    float:right;
+    
+
+}
+
 footer{
-    background-color: rgb(61, 169, 133);
+    background-color:#274247;
+    font-size: 0.3em;
+    color: #ecce24;
+    height: 20em;
+    align-items: center;
+    padding-top: 5em;
+    font-family: 'Patrick Hand SC', cursive;
 
 }
 
-#sidebar{
-    background-color: rgb(82, 177, 92);
+img{
+    padding-left: 3px;
 }
-#content1{
-    background-color: rgb(51, 173, 173);
-}
-#content2{
-    background-color: rgb(48, 48, 167);
-}
-#content3{
-    background-color: rgb(160, 99, 24);
-}
+  

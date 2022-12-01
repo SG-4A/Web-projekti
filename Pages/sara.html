@@ -6,18 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Äidinkielen visa!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="/Styles/sara.css">
-    <script src="/Script/sara.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/36d41c07ab.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Styles/sara.css">
+    <script src="../Script/sara.js" defer></script>
 </head>
 <body>
-   <div><h1>Yhdyssanavisa</h1></div>
+   <!--Bootstrapin Gridi alkaa tästä:-->
+
+  <div class="container text-center">
+   <div class="row">
+     <div class="col-12" id="Header">
+       <header> <img src="/Images/logo/Component 6.png" alt="">Web-projekti</header>
+       <!--Header tähän väliin-->
+       
+     </div>
+
+     <!--Bootstrapin navi alkaa-->
+     <div class="col-3" id="navi">
+       
+       <div id="Äidinkieli">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="Pages/sara.html">
+             <img src="../Images/äidinkieli1.png" width="100" height="60" class="d-inline-block align-top" alt="">
+             ÄIDINKIELI
+           </a>
+         </nav>
+       </div>
+         
+       <div id="Historia">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="Pages/sari.html">
+             <img src="../Images/historia1.png" width="100" height="60" class="d-inline-block align-top" alt="">
+           HISTORIA
+           </a>
+         </nav>
+       </div>
+         
+       <div id="Biologia">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="Pages/mirva.html">
+             <img src="../Images/biologia1.png" width="100" height="70" class="d-inline-block align-top" alt="">
+             BIOLOGIA
+           </a>
+         </nav>
+       </div>
+         
+       <div id="Maantieto">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="/Pages/nikita.html">
+             <img src="../Images/maantieto1.png" width="80" height="50" class="d-inline-block align-top" alt="">
+             MAANTIETO
+           </a>
+         </nav>
+       </div>
+         
+       <div id="Matematiikka">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="Pages/sanna.html">
+             <img src="../Images/math.png" width="80" height="50" class="d-inline-block align-top" alt="">
+             MATEMATIIKKA
+           </a>
+         </nav>
+       </div>
+
+       <div id="Englanti">
+         <nav class="navbar navbar-light bg-light navbar-custom">
+           <a class="navbar-brand" href="Pages/mila.html">
+             <img src="../Images/englanti (1).jpg" width="80" height="50" class="d-inline-block align-top" alt="">
+             ENGLANTI
+           </a>
+         </nav>
+       </div>
+     </div>
+     <!--bootstrapin navi loppuu-->
+     <div class="col-9" id="article">
+       <!--Tähän väliin sivun sisältö-->
+       <div><h1>Yhdyssanavisa</h1></div>
    
 <!---Divi joka sisältää koko visan alkaa tästä-->
  <div id="container">
    <!---Divi joka sisältää kysymykset alkaa tästä-->
    <div id="questions">
       <h3 id="question"></h3>
-      <ol>
+      <ol type="A">
          <li class="opt">
             <span id="option0" onclick="calculateScore(this)"></span>
          </li>
@@ -33,50 +110,58 @@
 </div>
 <!--Divi joka sisältää kysymykset päättyy tähän-->
    <div id="buttons">
-   <button type="button" class="next">Seuraava kysymys</button>
+   <button type="button" class="next mainButtons">Seuraava kysymys</button>
+   <button type="button" class="mainButtons" onclick="backToQuiz()"> Takaisin alkuun</button>
    </div>
 
  </div>
    <!--Divi joka sisältää koko visan loppuu tähän-->
 
    <!---Tulostaulu alkaa tästä-->
-   <div id="scores">
-      <div id="scorepicture"></div>
-      <h3 id="scoreTitle">Sinun tuloksesi:</h3>
-      <p id="yourScoreHere"></p>
-      <button id="backbutton" onclick="backToQuiz()"> Takaisin kyselyyn</button>
-      <button id="CheckAnswers" onclick="checkAnswers()">Tarkista vastauksesi</button>
+   <div id="scores" class="hidden">
+      <div id="scorePicture">
+         <img src="/Images/purkki 0.png" alt="" id="pointsOne" class="hidden prize">
+         <img src="/Images/purkki 1.png" alt="" id="pointsTwo" class="hidden prize">
+         <img src="/Images/purkki 2.png" alt=""id="pointsThree" class="hidden prize">
+         <img src="/Images/purkki 3.png" alt="" id="pointsFour" class="hidden prize">
+         <img src="/Images/purkki 4.png" alt="" id="pointsFive" class="hidden prize">
+      </div>
+      <h3 id="scoreTitle">Tulikärpäsiä kerätty <p id="yourScoreHere"></p></h3>
+      
+      <p id="answerComment"></p>
+      <button id="backbutton" class="mainButtons" onclick="backToQuiz()"> Takaisin kyselyyn</button>
+      <button id="extraButton" class="mainButtons hidden" onclick="backToQuiz()"> Yritä uudelleen</button>
+      <button id="CheckAnswers" class="mainButtons" onclick="checkAnswers()">Tarkista vastauksesi</button>
    </div>
    <!--Tulostaulun divi päättyy-->
 
    <!---Vastaustaulu alkaa tästä-->
-   <div id="answers">
+   <div id="answers" class="hidden">
       <h3 id="a">Vastaukset:</h3>
       <ol id="answerList">
 
       </ol>
       <button id="backbutton" onclick="backToQuiz()">Takaisin kyselyyn</button>
    </div>
+       <!--Sivun sisällön koodit loppuu-->
+     </div>
+     <div class="col-12" id="footer">
+       <!--Footerin koodi alkaa-->
+       <footer>
+   
+         <div class="fa-3x">
+           <i class="fa-solid fa-crow fa-bounce"></i>
+         
+         © 2022 Copyright
+     
+         <div> Mila Mirva Nikita Sanna Sara Sari</div>
+       </footer>
+     </div>
+     <!--Footerin koodit loppuu-->
+   </div>
+ </div>
 
-    <!--footer bootstrap alkaa-->
-<footer class="text-center text-white fixed-bottom" style="background-color: #ecce24;">
-    <!-- Grid container -->
-    <div class="container p-4"></div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: black;">
-      © 2022 Copyright:
-      <a class="text-white" href="">Mila</a>
-      <a class="text-white" href="">Mirva</a>
-      <a class="text-white" href="">Nikita</a>
-      <a class="text-white" href="">Sanna</a>
-      <a class="text-white" href="">Sara</a>
-      <a class="text-white" href="./Pages/sari.html">Sari</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!--footer bootstrap loppuu-->
+   
     
 </body>
 </html>

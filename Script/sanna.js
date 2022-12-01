@@ -58,10 +58,10 @@ function calcScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
+        document.getElementById(e.id).style.background= '#57E30B';
     }
     else{
-        document.getElementById(e.id).style.background= 'tomato';
+        document.getElementById(e.id).style.background= '#E30B21';
     }
     setTimeout(nextQuestion,300);
 }
