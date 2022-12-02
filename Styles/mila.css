@@ -7,15 +7,14 @@
 body {
     background-image: url(../Images/milaTausta.jpg);
     background-repeat: no-repeat;
-    /*background-size: 100%;*/
+    
 }
-
 .questions {
     margin: auto;
     width: 50%;
     height: 90%;
     padding: 15px;
-    background: rgb(31, 111, 31);
+    background: rgba(31, 111, 31, 0.7);
     cursor: default;
     border-radius: 15px;
 
@@ -28,13 +27,7 @@ body {
 }
 
 .option {
-    /*
-    margin: 10px;
-    border: Solid 2px;
-    border-bottom: solid 1px;
-    width: 200px;
-    height: 50px;
-    */
+   
     width: 100%;
     height: 100%;
     border-radius: 15px;
@@ -92,6 +85,7 @@ button:active {
     position: relative;
     top: 5rem;
     display: none;
+    border-radius: 15px;
 }
 
 #score-title {
@@ -120,4 +114,9 @@ button:active {
 h2 {
     text-align: center;
     padding: 5px;
+}
+
+img {
+    width: 40%;
+  
 }
