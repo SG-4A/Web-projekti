@@ -31,8 +31,9 @@ let questionBank = [
         answer: "Green"
     },
 ]
-
+const TIME_AMOUNT = 5;
 let question = document.getElementById("question");
+let timer = document.getElementById("timer");
 let questions = document.getElementById("questions");
 let quizContainer = document.getElementById("quiz-container");
 let scoreboard = document.getElementById("scoreboard");
@@ -44,8 +45,11 @@ let next = document.querySelector(".next");
 let points = document.getElementById("score");
 let span = document.querySelectorAll("span");
 let li = document.querySelectorAll("li");
-let i = 0;
+let questionIndex = 0;
 let score = 0;
+let timeAmount = TIME_AMOUNT;
+let questionAnswered = false;
+
 //guestion function
 
 function displayQuestion() {
@@ -57,36 +61,74 @@ function displayQuestion() {
         span[a].parentElement.style.background = "burlywood";
     }
     
-    question.innerHTML = "Mikä on englanniksi " + questionBank[i].question + "?";
-    option0.innerHTML = questionBank[i].option[0];
-    option1.innerHTML = questionBank[i].option[1];
-    option2.innerHTML = questionBank[i].option[2];
-    option3.innerHTML = questionBank[i].option[3];
-    stat.innerHTML = "Kysymykset" + " " + (i + 1) + " " + "/" + " " + questionBank.length;
+    question.innerHTML = "Mikä on englanniksi " + questionBank[questionIndex].question + "?";
+    option0.innerHTML = questionBank[questionIndex].option[0];
+    option1.innerHTML = questionBank[questionIndex].option[1];
+    option2.innerHTML = questionBank[questionIndex].option[2];
+    option3.innerHTML = questionBank[questionIndex].option[3];
+    stat.innerHTML = "Kysymykset" + " " + (questionIndex + 1) + " " + "/" + " " + questionBank.length;
+    timer.innerHTML = timeAmount;
+    setTimeout(myTimer, 1000);
 }
 
 //calculat function
 function calcScore(e) {
-    //console.log("Valittu: ");// + e.innerHTML);
-    //console.log("Vastaus: " + questionBank[i].answer);
-    if (e.target.innerHTML === questionBank[i].answer && score < questionBank.length) {
+    setQuestionTextColor("white",500);
+    
+    if (e.target.innerHTML === questionBank[questionIndex].answer && score < questionBank.length) {
         score = score + 1;
         document.getElementById(e.target.id).parentElement.style.background = "#07eb1a";
         document.getElementById(e.target.id).style.background = "#07eb1a";
-        //console.log(e.id);
+       
     }
     else {
         document.getElementById(e.target.id).parentElement.style.background = "#eb0b07";
         document.getElementById(e.target.id).style.background = "#eb0b07";
-        //document.getElementById(e.id + "0").style.background = "#eb0b07";
+        
     }
+    questionAnswered = true;
+    timeAmount = TIME_AMOUNT;
     setTimeout(nextQuestion, 300);
+}
+
+function myTimer()
+{
+    if (questionAnswered)
+    {
+        questionAnswered = false;
+        return;
+    }
+    timeAmount--;
+    timer.innerHTML = timeAmount;
+    if (timeAmount <= 0)
+    {
+        timeAmount = TIME_AMOUNT;
+        nextQuestion();
+        //question.style.color = "red";
+        setQuestionTextColor("red", 500);
+        //setTimeout(resetQuestionText, 500);
+
+        
+    }
+    else
+    {
+        setTimeout(myTimer, 1000);
+    }
+}
+
+function setQuestionTextColor(color, timeOut) {
+    question.style.color = color;
+    setTimeout(resetQuestionText, timeOut);
+}
+
+function resetQuestionText() {
+    question.style.color = "black"
 }
 
 //fuction to display next question
 function nextQuestion() {
-    if (i < questionBank.length - 1) {
-        i = i + 1;
+    if (questionIndex < questionBank.length - 1) {
+        questionIndex = questionIndex + 1;
         displayQuestion();
     }
     else {
