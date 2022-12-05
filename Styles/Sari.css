@@ -166,7 +166,9 @@ button:active{
     background: #ffffcf;
     padding: 2em;
     text-align: center;
-    margin: auto;
+    margin-left: 10em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     position: relative;
     top: 1em;
     bottom: 20em;
@@ -229,5 +231,13 @@ h2{
 .visa{
     width: 80%;
     margin: 5px 0px 15px 0px;
-    
+}
+
+.hidden{
+    display: none;
+}
+
+.image{
+    width: 200px;
+    height: auto;
 }
