@@ -35,20 +35,21 @@ let option1 = document.getElementById("option1");
 let option2 = document.getElementById("option2");
 let option3 = document.getElementById("option3");
 let options = document.querySelector(".next");
-let points = document.getElementById("score");
 let span = document.querySelectorAll("span");
 let i=0;
 let score= 0;
-const PERFECT ="Hienoa! Keräsit kaikki!"
-const GOOD = "Loistavaa! Melkein kaikki napattu!"
-const AVERAGE = "Hienoa! Kokeile vielä napata loputkin!"
-const POOR = "Hyvä yritys! Kokeile uudestaan"
+let finalScore = document.getElementById("yourScoreHere");
+const PERFECT ="Hienoa! Keräsit kaikki!";
+const GOOD = "Loistavaa! Melkein kaikki napattu!";
+const AVERAGE = "Hienoa! Kokeile vielä napata loputkin!";
+const POOR = "Hyvä yritys! Kokeile uudestaan";
 const IMAGE0 = document.getElementById("pointsZero");
 const IMAGE1 = document.getElementById("pointsOne");
 const IMAGE2 = document.getElementById("pointsTwo");
 const IMAGE3 = document.getElementById("pointsThree");
 const IMAGE4 = document.getElementById("pointsFour");
 const IMAGE5 = document.getElementById("pointsFive");
+
 
 //function to display questions
 function displayQuestion(){
@@ -84,31 +85,31 @@ function nextQuestion(){
         displayQuestion();
     }
     else{
-        finalScore.innerHTML= points+ "/"+ question.length;
-        quiz.style.display= "none";
-        scoreboard.style.display= "block"
-        if(points===5){
+        finalScore.innerHTML= score+ "/"+ questionBank.length;
+        quizContainer.style.display= "none";
+        scorecard.style.display= "block";  
+        if(score===5){
             document.getElementById("answerComment").textContent= PERFECT;
             IMAGE5.classList.remove("hidden");
-        } else if (points===4){
+        } else if (score===4){
             document.getElementById("answerComment").textContent= GOOD;
             IMAGE4.classList.remove("hidden");
-        } else if(points===3){
+        } else if(score===3){
             document.getElementById("answerComment").textContent= AVERAGE;
             IMAGE3.classList.remove("hidden");
             hideButton.classList.add("hidden");
             showButton.classList.remove("hidden");
-        } else if (points===2){
+        } else if (score===2){
             document.getElementById("answerComment").textContent= AVERAGE;
             IMAGE2.classList.remove("hidden");
             hideButton.classList.add("hidden");
             showButton.classList.remove("hidden");
-        } else if (points===1 || points===1){
+        } else if (score===1 || score===1){
             document.getElementById("answerComment").textContent= AVERAGE;
             IMAGE1.classList.remove("hidden");
             hideButton.classList.add("hidden");
             showButton.classList.remove("hidden");  
-        }else if (points===0 || points===1){
+        }else if (score===0 || score===1){
             document.getElementById("answerComment").textContent= POOR;
             IMAGE0.classList.remove("hidden");
             hideButton.classList.add("hidden");
@@ -127,7 +128,7 @@ function checkAnswer(){
     let answerBank = document.getElementById("answerBank");
     let answers= document.getElementById("answers");
     answerBank.style.display= "block";
-    scoreboard.style.display= "none";
+    scorecard.style.display= "none";
     for(let a=0;a<questionBank.length;a++)
     {
         let list = document.createElement("li");
