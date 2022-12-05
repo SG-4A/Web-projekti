@@ -99,7 +99,7 @@ function nextQuestion(){
     else{
         finalScore.innerHTML= points+ "/"+ questions.length;
         quiz.style.display= "none";
-        scoreBoard.style.display= "block"
+        scoreBoard.style.display= "block";
         if(points===5){
             document.getElementById("answerComment").textContent= PERFECT;
             IMAGE4.classList.remove("hidden");
