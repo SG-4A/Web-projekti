@@ -27,10 +27,9 @@ header img{
        
 }
 
-#navi div{
-    background-color: #ecede8;
-    height:10%;
-    border: 2px solid #463731;
+.navbar{
+    background-color: #ecede8 !important;
+    height:50px !important;
 }
 
 nav{
@@ -43,8 +42,6 @@ nav{
     margin: 5px 0px 15px 0px;
     
 }
-
-
 
 
 #article{
