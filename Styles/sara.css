@@ -1,7 +1,15 @@
+/* Sara-Sofia Kesäniemi*/
+
 .navbar{
-    background-color: #EDE9E8 !important;
+    background-color:#479fad !important;
     height:50px !important;
     padding-left: 50px;
+    border:2px #0c2b2f solid;
+    
+}
+.visa{
+    width: 80%;
+    margin: 5px 0px 15px 0px;
     
 }
 
@@ -10,7 +18,9 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     font-family: Arial, Helvetica, sans-serif;
+    margin:auto;
 }
+
 header{
     background-color: #274247;
     font-size: 4em;
@@ -19,24 +29,26 @@ header{
     font-family: 'Patrick Hand SC', cursive;
     color: #ecce24;  
 }
+
 header img{
     float: left;
-    padding-left: 6%;
-
-    
+    padding-left: 8%;
     
 }
+
 nav{
 
     font-family: 'Patrick Hand SC', cursive;
    
 }
+
 #navi{
     height: 50%;
     padding-left: 70px;
    
        
 }
+
 h1{
     background-color:#a83d67;
     margin:20px;
@@ -45,29 +57,41 @@ h1{
     position: relative;
     left:13%;
     opacity:80%;
-    color:#0c2b2f;
-    
-    
-    
+    color:#0c2b2f;    
 
 }
-#container, #scores, #answers{
+
+#container, #scores{
     background-color:#358c7f;
     opacity:90%;
-    width:50%;
+    width:49%;
     margin-bottom:5px;
     position:relative;
     left:15%;
     border-radius:7px;
     border: 3px solid #0c2b2f;
     text-align: center;
-    
-    
+    font-size: 1.0em;  
     
 }
+#answers{
+    background-color:#358c7f;
+    opacity:90%;
+    width:49%;
+    margin-bottom:5px;
+    position:relative;
+    left:15%;
+    border-radius:7px;
+    border: 3px solid #0c2b2f;
+    text-align: left;
+    padding:10px;
+    font-size: 1.2em;
+}
+
 .hidden{
     display:none;
 }
+
 .opt{
     border: 3px solid #0c2b2f;
     font-size: 1.2em;
@@ -75,11 +99,14 @@ h1{
     margin:5px;
     padding:5px;
 }
+
 .mainButtons{
     margin:10px;
     background-color:#a83d67;
-   
-   
+}
+#backToQuizButton{
+    position:relative;
+    left:150px;
     
 }
 
@@ -88,9 +115,8 @@ h1{
     margin-top:10px;
     position:relative;
     top:30px;
-    
-    
 }
+
 footer{
     background-color:#274247;
     font-size: 0.3em;
@@ -100,5 +126,4 @@ footer{
     padding-top: 5em;
     font-family: 'Patrick Hand SC', cursive;
     
-
 }
