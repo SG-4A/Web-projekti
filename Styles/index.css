@@ -18,22 +18,25 @@ header{
 }
 header img{
     float: left;
-    padding-left: 6%;   
+    padding-left: 8%;   
 }
 
 #navi{
     height: 50%;
-    background-color: #5e2c98;
+    padding-left: 70px;
+   
        
 }
 
 .navbar{
     background-color: #ecede8 !important;
     height:50px !important;
+    padding-left: 50px;
 }
 
 nav{
        font-family: 'Patrick Hand SC', cursive; 
+
 }
    
 

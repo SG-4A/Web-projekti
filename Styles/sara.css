@@ -1,7 +1,7 @@
-.navbar-custom {
+.navbar{
     background-color: #EDE9E8 !important;
-    opacity:80%;
-    border: 2px solid #463731;
+    height:50px !important;
+    padding-left: 50px;
     
 }
 
@@ -27,11 +27,15 @@ header img{
     
 }
 nav{
-    margin-top: 5px;
-    margin-bottom:5px;
-    bottom: 0;
+
     font-family: 'Patrick Hand SC', cursive;
    
+}
+#navi{
+    height: 50%;
+    padding-left: 70px;
+   
+       
 }
 h1{
     background-color:#a83d67;
