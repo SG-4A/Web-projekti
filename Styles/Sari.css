@@ -161,7 +161,7 @@ button:active{
     background: #ecce24;
 }
 
-#scoreboard,#answerBank{
+#scorecard,#answerBank{
     width: 20rem;
     background: #ffffcf;
     padding: 2em;
