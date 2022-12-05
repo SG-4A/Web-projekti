@@ -70,7 +70,7 @@ img{
 }
 #title{
     text-align: center;
-    padding: 0.8rem 0;
+    padding: 0.9rem 0;
     font-size: 3rem;
     color: lightgray;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -83,6 +83,7 @@ img{
     border-radius: 1rem;
     width: 50%;
     opacity: 80%;
+
 }
 #question{
     margin-bottom: 1rem;
@@ -131,13 +132,12 @@ button:active{
     background: lavender;
 }
 #scoreboard,#answerBank{
-    width: 20rem;
+    width: 50%;
     background:lightgrey;
     padding: 2rem;
     text-align: center;
     margin: auto;
     position: relative;
-    top: 5rem;
     display: none;
     border-radius: 1.5rem;
     opacity: 80%;
