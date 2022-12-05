@@ -97,24 +97,15 @@ function nextQuestion(){
         } else if(score===3){
             document.getElementById("answerComment").textContent= AVERAGE;
             IMAGE3.classList.remove("hidden");
-            hideButton.classList.add("hidden");
-            showButton.classList.remove("hidden");
         } else if (score===2){
             document.getElementById("answerComment").textContent= AVERAGE;
             IMAGE2.classList.remove("hidden");
-            hideButton.classList.add("hidden");
-            showButton.classList.remove("hidden");
-        } else if (score===1 || score===1){
+        }else if (score===1){
             document.getElementById("answerComment").textContent= AVERAGE;
-            IMAGE1.classList.remove("hidden");
-            hideButton.classList.add("hidden");
-            showButton.classList.remove("hidden");  
-        }else if (score===0 || score===1){
+            IMAGE0.classList.remove("hidden");    
+        }else if (score===0){
             document.getElementById("answerComment").textContent= POOR;
-            IMAGE0.classList.remove("hidden");
-            hideButton.classList.add("hidden");
-            showButton.classList.remove("hidden");
-            
+            IMAGE0.classList.remove("hidden");    
         }
     }
 }
