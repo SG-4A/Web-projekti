@@ -14,9 +14,7 @@ header img{
 
 #navi{
     height: 50%;
-    padding-left: 70px;
-   
-       
+    padding-left: 70px;    
 }
 
 .navbar{
@@ -88,7 +86,7 @@ body{
 
 .questions{
     margin-left: 8rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 2rem;
     background: #1d6c68;
     opacity: 95%;
@@ -163,12 +161,14 @@ button:active{
     background: #ecce24;
 }
 
-#scoreboard,#answerBank{
+#scorecard,#answerBank{
     width: 20rem;
     background: #ffffcf;
     padding: 2em;
     text-align: center;
-    margin: auto;
+    margin-left: 10em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     position: relative;
     top: 1em;
     bottom: 20em;
@@ -226,4 +226,18 @@ h2{
 
 #stat{
     margin-right: 6.5em;
+}
+
+.visa{
+    width: 80%;
+    margin: 5px 0px 15px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.image{
+    width: 200px;
+    height: auto;
 }

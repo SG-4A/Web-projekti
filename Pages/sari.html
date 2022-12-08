@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History quiz</title>
-    <link rel="stylesheet" href="../Styles/Sari.css">
-    <script src="../Script/Sari.js" defer></script>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/36d41c07ab.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/36d41c07ab.js" crossorigin="anonymous"></script>
@@ -14,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Sari.css">
+    <script src="../Script/Sari.js" defer></script>
 </head>
 <body>
  
@@ -22,7 +23,7 @@
 <div class="container text-center">
     <div class="row">
       <div class="col-12" id="Header">
-        <header > <img  src="/Images/logo/Component 6.png" alt="">Web-projekti</header>
+        <header > <img  src="../Images/logo/Component 6.png" alt="">Web-projekti</header>
         
         <!--Header tähän väliin-->
         
@@ -31,69 +32,70 @@
       <!--Bootstrapin navi alkaa-->
       <div class="col-3" id="navi">
         
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/sara.html">              ÄIDINKIELI
+            <a class="navbar-brand" href="./sara.html">              
+              ÄIDINKIELI
             </a>
           </nav>
         </div>
           
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/sari.html">
-            HISTORIA
+            <a class="navbar-brand" href="./sari.html">
+              HISTORIA
             </a>
           </nav>
         </div>
           
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/mirva.html">
+            <a class="navbar-brand" href="./mirva.html">
 
               BIOLOGIA
             </a>
           </nav>
         </div>
           
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/nikita.html">
+            <a class="navbar-brand" href="./nikita.html">
 
               MAANTIETO
             </a>
           </nav>
         </div>
           
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/sanna.html">
+            <a class="navbar-brand" href="./sanna.html">
            
               MATEMATIIKKA
             </a>
           </nav>
         </div>
 
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/mila.html">
+            <a class="navbar-brand" href="./mila.html">
         
               ENGLANTI
             </a>
           </nav>
         </div>
 
-        <div id="visa">
+        <div class="visa">
           <nav class="navbar navbar-light bg-light navbar-custom">
-            <a class="navbar-brand" href="Pages/sara.html">
+            <a class="navbar-brand" href="./tietosivu.html">
           
               TIETOJA SIVU
             </a>
           </nav>
         </div>
       
-      <div id="visa">
+      <div class="visa">
         <nav class="navbar navbar-light bg-light navbar-custom">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
           
            KOTISIVU
           </a>
@@ -103,7 +105,7 @@
 
 
       <!--bootstrapin navi loppuu-->
-      <!--<div class="col-9" id="article">-->
+   
         <!--Tähän väliin sivun sisältö-->
       
         <!--visa-->
@@ -130,20 +132,20 @@
     </div>
 
     <!--Scoreboard section-->
-    <div id="scoreboard" class="hidden">
+    <div id="scorecard" class="hidden">
         <div id="scorePicture">
-           <img src="/Images/Nimetön.png" alt="" id="pointsZero" class="hidden">
-           <img src="/Images/purkki 0.png" alt="" id="pointsOne" class="hidden">
-           <img src="/Images/purkki 1.png" alt="" id="pointsTwo" class="hidden">
-           <img src="/Images/purkki 2.png" alt=""id="pointsThree" class="hidden">
-           <img src="/Images/purkki 3.png" alt="" id="pointsFour" class="hidden">
-           <img src="/Images/purkki 4.png" alt="" id="pointsFive" class="hidden">
+           <img src="../Images/Nimetön.png" alt="" id="pointsZero" class="hidden image" >
+           <img src="../Images/purkki 0.png" alt="" id="pointsOne" class="hidden image">
+           <img src="../Images/purkki 1.png" alt="" id="pointsTwo" class="hidden image">
+           <img src="../Images/purkki 2.png" alt=""id="pointsThree" class="hidden image">
+           <img src="../Images/purkki 3.png" alt="" id="pointsFour" class="hidden image">
+           <img src="../Images/purkki 4.png" alt="" id="pointsFive" class="hidden image">
         </div>
         <h3 id="scoreTitle">Tulikärpäsiä purkissasi <p id="yourScoreHere"></p></h3>
         
         <p id="answerComment"></p>
         <button id="backbutton" class="mainButtons" onclick="backToQuiz()"> Uudestaan</button>
-        <button id="CheckAnswers" class="mainButtons" onclick="checkAnswers()">Tarkista vastaukset</button>
+        <button id="CheckAnswers" class="mainButtons" onclick="checkAnswer()"> Tarkista vastaukset</button>
      </div>
 
 
