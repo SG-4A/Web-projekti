@@ -67,18 +67,18 @@ button {
     border-radius: 15px;
     padding: 10px;
     margin: 10px;
-    background-color: aqua;
+    background-color: burlywood;
     font-weight: bold;
 }
 
 button:active {
-    background: blueviolet;
+    background: brown;
 }
 
 #scoreboard,
 #answerBank {
     width: 20rem;
-    background-color: darkcyan;
+    background-color: rgba(31, 111, 31, 0.7) ;
     padding: 10px;
     text-align: center;
     margin: auto;
