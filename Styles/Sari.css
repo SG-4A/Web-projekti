@@ -5,11 +5,12 @@ header{
     text-align: center;
     padding: 15px;
     font-family: 'Patrick Hand SC', cursive;
-    color: #ecce24;  
+    color: #ecce24; 
+    padding-right: 1.4em; 
 }
 header img{
     float: left;
-    padding-left: 6%;   
+    padding-left: 7%;   
 }
 
 #navi{
@@ -102,14 +103,13 @@ body{
 #question{
     margin-bottom: 1rem;
     margin-right: 10%;
-    color: rgb(49, 49, 49);
+    color: black;
     font-size: 1.5rem;
 }
 
 .option{
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    border-bottom: solid 0.1rem #c7af26;
     width: 10rem;
     background: #ecce24;
     border-radius: 1rem;
@@ -122,7 +122,7 @@ body{
 ol{
     position: relative;
     padding: 0 1.5rem;
-    color: rgb(49, 49, 49);
+    color: black;
     
 }
 
@@ -138,7 +138,7 @@ span{
 
 #stat{
     margin-top: 1.5;
-    color: rgb(49, 49, 49);
+    color: black;
     font-size: 1em;
 
 }
@@ -151,10 +151,11 @@ button{
     padding: 0.2rem 1.5rem;
     border: none;
     outline: none;
-    font-size: 1.5rem;
-    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
     color: #54afb8;
     background: #216369;
+    margin: 0.3rem;
 }
 
 button:active{
@@ -164,17 +165,14 @@ button:active{
 #scorecard,#answerBank{
     width: 20rem;
     background: #ffffcf;
-    padding: 2em;
+    padding: 1em;
     text-align: center;
     margin-left: 10em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     position: relative;
     top: 1em;
-    bottom: 20em;
     display: none;
-    border-radius: 5em;
-    height: 40em;
+    border-radius: 1em;
 }
 
 #answerBank img{
@@ -208,11 +206,21 @@ h1{
     background-color: #ecce24;
     opacity: 65%;
     width: 10em;
-    margin-left: 5em;
+    margin-left: 4.2em;
 }
 
 h2{
     color:#104044;
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.2rem;
+    padding-left: 3em;
 }
 
 #scoreboard img{
@@ -238,6 +246,6 @@ h2{
 }
 
 .image{
-    width: 200px;
+    width: 150px;
     height: auto;
 }
