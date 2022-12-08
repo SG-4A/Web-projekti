@@ -1,4 +1,5 @@
 //Malli:https://github.com/Ahmad528/quizApp/blob/main/quizwuiz/quiz.js
+//Sara-Sofia Kesäniemi
 
 //Kysymykset talletettu taulukkoon:
 
@@ -98,7 +99,7 @@ function nextQuestion(){
     else{
         finalScore.innerHTML= points+ "/"+ questions.length;
         quiz.style.display= "none";
-        scoreBoard.style.display= "block"
+        scoreBoard.style.display= "block";
         if(points===5){
             document.getElementById("answerComment").textContent= PERFECT;
             IMAGE4.classList.remove("hidden");
@@ -144,7 +145,7 @@ function checkAnswers(){
     for(let j=0;j<questions.length;j++)
     {
         let list= document.createElement("li");
-        list.innerHTML= questions[j].q+":"+" "+questions[j].a;
+        list.innerHTML= questions[j].q+":"+"<br>"+questions[j].a;
         answers.appendChild(list);
     }
 }
