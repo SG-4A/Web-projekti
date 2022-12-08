@@ -1,9 +1,4 @@
-.navbar-custom {
-    background-color: #EDE9E8 !important;
-    opacity:90%;
-    border: 2px solid #463731;
-    
-}
+
 header{
     background-color: #274247;
     font-size: 4em;
@@ -16,13 +11,22 @@ header img{
     float: left;
     padding-left: 6%;   
 }
-nav{
-    margin-top: 5px;
-    margin-bottom:5px;
-    bottom: 0;
-    font-family: 'Patrick Hand SC', cursive;
-  
+
+#navi{
+    height: 50%;
+    padding-left: 70px;    
 }
+
+.navbar{
+    background-color: #ecede8 !important;
+    height:50px !important;
+    padding-left: 50px;
+}
+
+nav{
+    font-family: 'Patrick Hand SC', cursive; 
+}
+
 footer{
     background-color:#274247;
     font-size: 0.3em;
@@ -82,7 +86,7 @@ body{
 
 .questions{
     margin-left: 8rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 2rem;
     background: #1d6c68;
     opacity: 95%;
@@ -157,12 +161,14 @@ button:active{
     background: #ecce24;
 }
 
-#scoreboard,#answerBank{
+#scorecard,#answerBank{
     width: 20rem;
     background: #ffffcf;
     padding: 2em;
     text-align: center;
-    margin: auto;
+    margin-left: 10em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     position: relative;
     top: 1em;
     bottom: 20em;
@@ -220,4 +226,18 @@ h2{
 
 #stat{
     margin-right: 6.5em;
+}
+
+.visa{
+    width: 80%;
+    margin: 5px 0px 15px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.image{
+    width: 200px;
+    height: auto;
 }

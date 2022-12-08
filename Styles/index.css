@@ -18,33 +18,32 @@ header{
 }
 header img{
     float: left;
-    padding-left: 6%;   
+    padding-left: 8%;   
 }
 
 #navi{
     height: 50%;
-    background-color: #5e2c98;
+    padding-left: 70px;
+   
        
 }
 
-#navi div{
-    background-color: #ecede8;
-    height:10%;
-    border: 2px solid #463731;
+.navbar{
+    background-color: #ecede8 !important;
+    height:50px !important;
+    padding-left: 50px;
 }
 
 nav{
        font-family: 'Patrick Hand SC', cursive; 
+
 }
    
 
-#visa{
+.visa{
     width: 80%;
-    margin: 5px 0px 15px 0px;
-    
+    margin: 5px 0px 15px 0px; 
 }
-
-
 
 
 #article{
@@ -70,6 +69,7 @@ nav{
     display:flex;
     
 }
+
 #bottle{
     float:right;
     
