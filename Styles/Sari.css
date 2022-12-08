@@ -19,8 +19,8 @@ header img{
 }
 
 .navbar{
-    background-color: #ecede8;
-    height:50px;
+    background-color: #ecce24 !important;
+    border-radius: 1em;
     padding-left: 50px;
 }
 
@@ -90,7 +90,7 @@ body{
     background: #1d6c68;
     opacity: 95%;
     cursor: default;
-    border-radius: 1rem;
+    border-radius: 1em;
     width: 50%;
 }
 
@@ -110,7 +110,7 @@ body{
     font-size: 1.2rem;
     width: 10rem;
     background: #ecce24;
-    border-radius: 1rem;
+    border-radius: 1em;
 }
 
 .option:hover{
@@ -127,7 +127,7 @@ ol{
 span{
     display: block;
     padding: 0.1rem 0.7rem;
-    border-radius: 1rem;
+    border-radius: 1em;
 }
 
 #answer{
@@ -150,7 +150,7 @@ button{
     border: none;
     outline: none;
     font-size: 1.3rem;
-    border-radius: 1rem;
+    border-radius: 1em;
     color: #54afb8;
     background: #216369;
     margin: 0.3rem;
