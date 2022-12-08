@@ -51,11 +51,12 @@ footer{
 
 #background{
     background-image: url(../Images/mirvan\ tausta.jpg); 
-    background-size: cover;
+    background-size:cover;
     background-position:center;
     background-position-y: -12em;
     height: 80vh;
-    position: relative;   
+    position: relative; 
+    
 }
 
 .col-10{
