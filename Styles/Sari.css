@@ -19,8 +19,8 @@ header img{
 }
 
 .navbar{
-    background-color: #ecede8 !important;
-    height:50px !important;
+    background-color: #ecede8;
+    height:50px;
     padding-left: 50px;
 }
 
@@ -69,8 +69,6 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
-
-
 
 .img{
     position: fixed;
