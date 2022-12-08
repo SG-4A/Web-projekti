@@ -241,8 +241,6 @@ function handleQuestions() {
         }
     }
 }
-
-
 let questionNumber = 1 //holds the current question number
 let playerScore = 0  //holds the player score
 let wrongAttempt = 0 //amount of wrong answers picked by player
