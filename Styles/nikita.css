@@ -1,6 +1,43 @@
 *{
     box-sizing: border-box;
 }
+
+.navbar{
+    background-color:#479fad !important;
+    height:50px !important;
+    padding-left: 50px;
+    border:2px #0c2b2f solid;
+    
+}
+
+header{
+    background-color: #274247;
+    font-size: 4em;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ecce24;  
+}
+
+header img{
+    float: left;
+    padding-left: 8%;
+    
+}
+
+nav{
+
+    font-family: 'Patrick Hand SC', cursive;
+   
+}
+
+#navi{
+    height: 50%;
+    padding-left: 70px;
+   
+       
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -58,4 +95,15 @@ button:hover{
 button:focus{
     outline: none;
     background-color: #5ec6eb;
+}
+
+footer{
+    background-color:#274247;
+    font-size: 0.3em;
+    color: #ecce24;
+    height: 20em;
+    align-items: center;
+    padding-top: 5em;
+    font-family: 'Patrick Hand SC', cursive;
+    
 }
