@@ -1,3 +1,4 @@
+/* Mila Kimpimäki */
 * {
     margin: 5px;
     padding: 5px;
@@ -7,8 +8,26 @@
 body {
     background-image: url(../Images/milaTausta.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
     
 }
+
+#article{
+    background-color:;
+    margin: 0px;
+
+
+}
+#navi{
+    background-color:;
+    margin: 0px;
+  
+   
+}
+
 .questions {
     margin: auto;
     width: 50%;
@@ -17,6 +36,7 @@ body {
     background: rgba(31, 111, 31, 0.7);
     cursor: default;
     border-radius: 15px;
+    
 
 }
 
@@ -78,12 +98,13 @@ button:active {
 #scoreboard,
 #answerBank {
     width: 20rem;
+    height: 30rem;
     background-color: rgba(31, 111, 31, 0.7) ;
     padding: 10px;
     text-align: center;
     margin: auto;
     position: relative;
-    top: 5rem;
+    top: 1rem;
     display: none;
     border-radius: 15px;
 }
@@ -116,7 +137,59 @@ h2 {
     padding: 5px;
 }
 
-img {
-    width: 40%;
+#images {
+    width: 100px;
   
+}
+
+/*tästä alkaa index css*/
+
+header{
+    background-color: #274247;
+    font-size: 4em;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Patrick Hand SC', cursive;
+    color: #ecce24;  
+}
+header img{
+    float: left;
+    padding-left: 8%;   
+}
+#navi{
+    height: 50%;
+    padding-left: 70px;
+    
+   
+       
+}
+
+.navbar{
+    background-color:  burlywood !important;
+    height:50px !important;
+    padding-left: 50px;
+    border-radius: 5px;
+  
+}
+
+nav{
+       font-family: 'Patrick Hand SC', cursive; 
+
+}
+   
+
+.visa{
+    width: 80%;
+    margin: 5px 0px 15px 0px; 
+}
+footer{
+    background-color:#274247;
+    font-size: 0.3em;
+    color: #ecce24;
+    height: 20em;
+    
+    align-items: center;
+    padding-top: 5em;
+    font-family: 'Patrick Hand SC', cursive;
+
 }
