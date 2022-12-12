@@ -125,14 +125,15 @@ span{
     text-align: center;
 }
 button{
-    padding: 0.2rem 1.5rem;
+    padding: 0.1rem 1rem;
     border: none;
     outline: none;
     font-size: 1.2rem;
     border-radius: 1.5rem;
-    margin: 0 2em 2em 0;
+    margin: 0 0 3em 0;
     color:black;
     background:lightskyblue;
+    opacity: 80%;
 }
 button:active{
     background: lavender;
@@ -159,6 +160,7 @@ button:active{
 #score{
     font-size: 2.5rem;
 }
+
 #answerBank li{
     text-align: left;
     margin-bottom: 0.2rem;
