@@ -39,17 +39,7 @@ let points= document.getElementById('score');
 let span= document.querySelectorAll('span');
 let i=0;
 let score= 0;
-let hideButton = document.getElementById("backbutton");
-let showButton = document.getElementById("extraButton");
-const PERFECT ="Mahtavaa sait täydet pisteet ja keräsit kaikki tulikärpäset!"
-const GOOD = "Hienoa työtä! Keräsit melkein kaikki tulikärpäset!"
-const AVERAGE = "Hyvää työtä! Seuraavalla kerralla saat varmasti kaikki tulikärpäset!"
-const POOR = "Onnistut varmasti paremmin ensikerralla! Yritä visaa uudestaan."
-const IMAGE0 = document.getElementById("pointsOne");
-const IMAGE1 = document.getElementById("pointsTwo");
-const IMAGE2 = document.getElementById("pointsThree");
-const IMAGE3 = document.getElementById("pointsFour");
-const IMAGE4 = document.getElementById("pointsFive");
+
 
 
 //function to display questions
