@@ -88,6 +88,9 @@ h1{
     padding:10px;
     font-size: 1.2em;
 }
+#answerComment{
+    font-size: 1.2em;
+}
 
 .hidden{
     display:none;
