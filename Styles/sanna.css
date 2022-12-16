@@ -195,12 +195,14 @@ footer{
     #navi{
         padding-left:0px;
         margin:0;
+        padding: 1px;
         
         
     }
     .navbar{
         background-color: #ecede8;
         padding-left:0px;
+    
         
 
     }
@@ -228,6 +230,9 @@ footer{
     }
     h2{
         font-size: 1.2em;
+    }
+    #stat{
+        font-size: 1em;
     }
     
     
