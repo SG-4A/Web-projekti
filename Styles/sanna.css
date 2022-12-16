@@ -190,6 +190,7 @@ footer{
     }
     #title{
         font-size: 2em;
+        padding: 0;
     }
     #navi{
         padding-left:0px;
@@ -218,6 +219,17 @@ footer{
     .option{
         width: 100%;
     }
+    #score-btn,#check-answer{
+        padding: 1px;
+        font-size: 1em;
+    }
+    #answerBank li{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    
     
     
     
