@@ -181,6 +181,16 @@ footer{
     
 }
 @media screen and (max-width:768px){
+    header{
+        font-size: 3em;
+    
+    }
+    header img{
+    display: none;
+    }
+    #title{
+        font-size: 2em;
+    }
     #navi{
         padding-left:0px;
         margin:0;
@@ -190,17 +200,27 @@ footer{
     .navbar{
         background-color: #ecede8;
         padding-left:0px;
+        
 
     }
     .navbar-brand{
-        font-size:15px;
+        font-size: 11px;
         text-align: center;
         padding-left:6px;
+        
+        
+    }
+    
+    .questions{
+        width:70%;
+    
+    }
+    .option{
+        width: 100%;
     }
     
     
-    #bunny, #bottle{
-        height:15%;
-    }
+    
+   
     
 }
