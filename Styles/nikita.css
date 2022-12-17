@@ -53,7 +53,7 @@ body{
     margin: 0;
     background: url('../Images/Planet.jpg') no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100;
     padding:15px;
 
 
