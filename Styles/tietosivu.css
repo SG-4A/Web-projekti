@@ -28,8 +28,8 @@ header img{
 }
 
 .navbar{
-    background-color: #ecede8 !important;
-    height:50px !important;
+    background-color: #ecede8;
+    height:50px;
     padding-left: 50px;
 }
 
@@ -84,5 +84,34 @@ footer{
     font-family: 'Patrick Hand SC', cursive;
 
 }
+
+@media screen and (max-width:768px){
+    #navi{
+        padding-left:0px;
+        margin:0;
+        
+        
+    }
+    .navbar{
+        background-color: #ecede8;
+        padding-left:0px;
+
+    }
+    .navbar-brand{
+        font-size:15px;
+        text-align: center;
+        padding-left:6px;
+    }
+    
+    #article{
+        width:400px;
+        height:600px;
+    }
+    #bunny, #bottle{
+        height:15%;
+    }
+    
+}
+
 
 
