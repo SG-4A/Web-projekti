@@ -19,7 +19,7 @@ header img{
 }
 
 .navbar{
-    background-color: #ecce24d7 !important;
+    background-color: #ecce24d7;
     border-radius: 1em;
     padding-left: 50px;
 }
@@ -201,8 +201,7 @@ width: 10em;
 
 h1{
     color:#194410;
-    background-color: #ecce24;
-    opacity: 65%;
+    background-color: #ecce24d5;
     width: 10em;
     margin-left: 4.2em;
 }
@@ -247,3 +246,51 @@ h4{
     width: 150px;
     height: auto;
 }
+
+img{
+    padding-left: 3px;
+}
+
+@media screen and (max-width:800px){
+
+    header{
+        font-size: 40px;
+        height: 110px;
+    }
+
+    #navi{
+        padding-left:0px;
+        margin:0;
+    }
+    .navbar{
+        background-color: #ecede8;
+        padding-left:0px;
+        background: #ecce24d7;
+        margin-left: 15px;
+    }
+    .navbar-brand{
+        font-size:15px;
+        text-align: center;
+        padding-left:6px;
+    }
+    
+    .questions, #scorecard{
+        width:300px;
+        margin-left: 0px;
+    }
+
+    h1{
+        width:300px;
+        margin-left: 0px;
+    }
+    
+    #stat{
+        font-size: smaller;
+    }
+}
+
+
+
+
+  
+

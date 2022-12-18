@@ -1,8 +1,8 @@
 /* Sara-Sofia Kesäniemi*/
 
 .navbar{
-    background-color:#479fad !important;
-    height:50px !important;
+    background-color:#479fad;
+    height:50px;
     padding-left: 50px;
     border:2px #0c2b2f solid;
     
@@ -88,6 +88,9 @@ h1{
     padding:10px;
     font-size: 1.2em;
 }
+#answerComment{
+    font-size: 1.2em;
+}
 
 .hidden{
     display:none;
@@ -127,4 +130,32 @@ footer{
     padding-top: 5em;
     font-family: 'Patrick Hand SC', cursive;
     
+}
+/* Responsiivisuus muotoilut */
+@media screen and (max-width:768px){
+    #navi{
+        padding-left:0px;
+        margin:0;
+        
+        
+    }
+    .navbar{
+        background-color: #479fad;;
+        padding-left:0px;
+
+    }
+    .navbar-brand{
+        font-size:15px;
+        text-align: center;
+        padding-left:6px;
+    }
+    #container, #scores{
+        background-color:#358c7f;
+        width:300px;
+    }
+    h1{
+        width:300px;
+         
+    
+    }
 }

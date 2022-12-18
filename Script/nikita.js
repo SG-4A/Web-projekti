@@ -91,8 +91,11 @@ submit.addEventListener('click', () => {
         }
         else{
             quiz.innerHTML = `<h2>Vastasit ${score}/${quizData.length} kysymyksestä oikein</h2>
+        <img style="max-width:220px; max-height:220px" class="img-fluid" src="../Images/purkki ${score-1}.png"></img>
             <button onclick="location.reload()">Kokeilla vielä kerran</button>
+             
             `;
+            console.log(score);
         }
     }
     });

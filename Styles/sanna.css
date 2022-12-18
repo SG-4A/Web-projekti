@@ -4,8 +4,8 @@
     
 }
 .navbar{
-    background-color:#479fad !important;
-    height:50px !important;
+    background-color:#479fad;
+    height:50px;
     padding-left: 50px;
     border:2px #0c2b2f solid;
     padding: 0.5em;
@@ -178,5 +178,66 @@ footer{
     align-items: center;
     padding-top: 5em;
     font-family: 'Patrick Hand SC', cursive;
+    
+}
+@media screen and (max-width:768px){
+    header{
+        font-size: 3em;
+    
+    }
+    header img{
+    display: none;
+    }
+    #title{
+        font-size: 2em;
+        padding: 0;
+    }
+    #navi{
+        padding-left:0px;
+        margin:0;
+        padding: 1px;
+        
+        
+    }
+    .navbar{
+        background-color: #ecede8;
+        padding-left:0px;
+    
+        
+
+    }
+    .navbar-brand{
+        font-size: 11px;
+        text-align: center;
+        padding-left:6px;
+        
+        
+    }
+    
+    .questions{
+        width:70%;
+    
+    }
+    .option{
+        width: 100%;
+    }
+    #score-btn,#check-answer{
+        padding: 1px;
+        font-size: 1em;
+    }
+    #answerBank li{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    #stat{
+        font-size: 1em;
+    }
+    
+    
+    
+    
+   
     
 }
