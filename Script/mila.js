@@ -1,5 +1,5 @@
 
-// kysymykset
+// kysymykset ja oikeat vastaukset
 let questionBank = [
     {
         question: "oranssi",
@@ -166,3 +166,6 @@ function initialize()
 }
 
 initialize();
+
+
+//Koodipohja otettu Youtubesta. https://www.youtube.com/watch?v=2jwdyO_UunE&t=121s//
