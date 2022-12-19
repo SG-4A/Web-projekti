@@ -1,5 +1,5 @@
 
-// kysymykset
+// kysymykset ja oikeat vastaukset
 let questionBank = [
     {
         question: "oranssi",
@@ -53,9 +53,7 @@ let questionAnswered = false;
 //guestion function
 
 function displayQuestion() {
-    /*for (let a = 0; a < li.length; a++) {
-        li[a].style.background = "none";
-    }*/
+    
     for (let a = 0; a < span.length; a++) {
         span[a].style.background = "none";
         span[a].parentElement.style.background = "burlywood";
@@ -168,3 +166,6 @@ function initialize()
 }
 
 initialize();
+
+
+//Koodipohja otettu Youtubesta. https://www.youtube.com/watch?v=2jwdyO_UunE&t=121s//

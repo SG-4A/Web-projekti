@@ -10,19 +10,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     
-    
-
-    
 }
 
 #article{
-    background-color:;
+    
     margin: 0px;
-
-
 }
+
 #navi{
-    background-color:;
+    
     margin: 0px;
   
    
@@ -120,11 +116,13 @@ button:active {
 
 #score {
     font-size: 2.5rem;
+   
 }
 
 #answerBank li {
     text-align: left;
-    margin-bottom: 0, 2rem;
+    margin-bottom: 0,4rem;
+    font-weight: bold;
 }
 
 #answers {
@@ -159,16 +157,19 @@ header img{
 #navi{
     height: 50%;
     padding-left: 70px;
+
     
    
        
 }
 
 .navbar{
-    background-color:  burlywood !important;
-    height:50px !important;
-    padding-left: 50px;
+    background-color:  burlywood; 
+    height:40px;
+    padding-left: 30px;
     border-radius: 5px;
+    margin: 0px;
+    
   
 }
 
@@ -181,15 +182,49 @@ nav{
 .visa{
     width: 80%;
     margin: 5px 0px 15px 0px; 
+    
 }
 footer{
     background-color:#274247;
     font-size: 0.3em;
     color: #ecce24;
     height: 20em;
-    
     align-items: center;
     padding-top: 5em;
     font-family: 'Patrick Hand SC', cursive;
+    
+    
+
+    
 
 }
+@media screen and (max-width:768px){
+    #navi{
+        padding-left:0px;
+        margin:0;
+        
+        
+    }
+    .navbar{
+        background-color: #ecede8;
+        padding-left:0px;
+
+    }
+    .navbar-brand{
+        font-size:15px;
+        text-align: center;
+        padding-left:6px;
+    }
+    
+    #article{
+        width:400px;
+        height:600px;
+    }
+    #bunny, #bottle{
+        height:15%;
+    }
+    
+}
+
+
+
