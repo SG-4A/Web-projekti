@@ -50,6 +50,17 @@ const IMAGE3 = document.getElementById("pointsThree");
 const IMAGE4 = document.getElementById("pointsFour");
 const IMAGE5 = document.getElementById("pointsFive");
 
+//hamppari alkaa
+const button = document.getElementById("my-button");
+const nav = document.getElementById("mynav");
+
+button.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
+//hamppari loppuu
+
+
+
 
 //function to display questions
 function displayQuestion(){
@@ -132,3 +143,5 @@ function checkAnswer(){
 }
 displayQuestion();
 //https://www.youtube.com/watch?v=2jwdyO_UunE&t=121s//
+
+
