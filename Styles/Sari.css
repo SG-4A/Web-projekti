@@ -30,6 +30,10 @@ header img{
     outline: none;
 }
 
+#hamppari{
+    display: none;
+}
+
 #navi{
     height: 50%;
     padding-left: 70px;    
@@ -391,6 +395,10 @@ img{
 
         #scorecard{
             margin-left: 80px;
+        }
+
+        #hamppari{
+            display: flex;
         }
 
 }
